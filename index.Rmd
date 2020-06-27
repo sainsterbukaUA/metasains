@@ -14,9 +14,8 @@ Kursus ini sengaja kami desain agar Metasains lebih aksesibel bagi peneliti Indo
 ## Persiapan Kursus
 Sebelum mengikuti kursus, ada beberapa hal yang perlu anda siapkan.
 
-* Perangkat lunak yang akan digunakan untuk melakukan meta-analisis adalah [jamovi](https://www.jamovi.org/). Sebelum mulai kursus, silakan pasang jamovi di perangkat anda masing-masing. Gunakan [versi 1.2.22 (*current*)](https://www.jamovi.org/download.html) dan jamovi dapat digunakan, baik pada perangkat dengan sistem operasi Windows maupun iOS. Anda juga dapat berlatih secara mandiri agar lebih familiar dengan fitur dan menu jamovi dengan mengikuti [tutorial dari Datalab](https://www.jamovi.org/). Baik jamovi maupun tutorial di Datalab dapat diakses terbuka tanpa biaya langganan apapun.
+* Perangkat lunak yang akan digunakan untuk melakukan meta-analisis adalah [jamovi](https://www.jamovi.org/). Sebelum mulai kursus, silakan pasang jamovi di perangkat anda masing-masing. Gunakan [versi 1.2.22 (*current*)](https://www.jamovi.org/download.html) dan jamovi dapat digunakan, baik pada perangkat dengan sistem operasi Windows maupun iOS. Anda juga dapat berlatih secara mandiri agar lebih familiar dengan fitur dan menu jamovi dengan mengikuti [tutorial dari Datalab](https://www.jamovi.org/). Baik jamovi maupun tutorial yang disediakan Datalab dapat diakses terbuka tanpa biaya langganan apapun.
 * Setelah anda berhasil memasang jamovi, anda harus menambahkan *module* Meta-Analysis for jamovi (MAJOR) untuk melakukan meta-analisis. Untuk memasang *module* tersebut, anda dapat menyimak video tutorial di bawah ini.
-* 
 
 <br>
 </br>
@@ -32,24 +31,20 @@ Kursus ini **sepenuhnya gratis**. Namun apabila anda merasa materi dalam kursus 
 
 Silakan klik laman ini untuk mengetahui lebih lanjut bagaimana cara menjadi patron atau memberikan donasi kepada Sains Terbuka Airlangga.
 
+<br>
+</br>
 
-## *Outline* materi
+## Struktur Kursus
 
-Berikut adalah *outline* materi *workshop*: 
+Kursus ini terdiri dari ... bagian. Di setiap bagian, kami akan menyediakan video materi dari pemandu kursus (dengan durasi antara 20-30 menit), salindia materi, referensi yang harus dibaca, dan tugas mandiri yang dapat dikerjakan. Anda dimungkinkan untuk mengajukan pertanyaan kepada pemandu kursus dengan mengisi *spreadsheet* yang khusus disediakan untuk menampung pertanyaan. *Spreadsheet* diatur dengan akses "publik" sehingga anda dapat menambahkan pertanyaan anda secara mandiri. Anda dapat bertanya secara anonim dan dimungkinkan untuk belajar dari pertanyaan dari peserta lain. 
 
-##### **Pengantar**
-* Apa itu *latent variable modeling* (LVM)?
-* Mengapa dan pada kondisi seperti apa LVM diperlukan?
-* Beberapa pilihan perangkat lunak untuk mengeksekusi LVM
-* Yang tidak dicakup dalam *workshop* serta keterbatasan JASP
+**MOHON DIINGAT** anda tidak diperkenankan untuk mengubah pertanyaan yang sudah diajukan oleh peserta lain, ataupun memodifikasi jawaban pemandu.
 
-##### **Korelasi**
-* Jenis-jenis koefisien korelasi
-* Faktor-faktor yang membuat koefisien korelasi bervariasi
-* [Koreksi atenuasi](https://methods.sagepub.com/reference/encyc-of-research-design/n81.xml) dan *measurement error*
-* *Variance-covariance* dan *correlation matrix*
-* *WARNING! Covariance/correlation matrix is not positive definite*
-* [*Heywood* dan *ultra-Heywood case*](https://journals.sagepub.com/doi/10.1177/0049124112442138)
-* Bivariat, *part*, dan *partial correlation*
-* Metrik variabel (*standardised* vs *unstandardised*)
+Berikut adalah gambaran singkat materi kursus:
+
+##### **Krisis Replikasi dan Revolusi Kredibilitas**
+Dalam materi ini, pemandu akan menguraikan krisis coba-ulang (replikasi) dan revolusi kredibilitas yang terjadi di beberapa disiplin ilmu, khususnya Psikologi. Pemandu akan menguraikan akar persoalan krisis replikasi, definisi coba-ulang (replikasi) dan reka-ulang (*reproducibility*), dan mengapa persoalan ini menjadi ancaman bagi kredibilitas sains, lembaga otoritas sains, dan ilmuwan.
+
+##### **Pengantar Meta-Sains**
+
 
