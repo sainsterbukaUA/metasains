@@ -1,6 +1,8 @@
+<br>
+</br>
 
 ## Deskripsi
-Berikut adalah repositori yang digunakan untuk menyimpan semua materi untuk **Workshop *Confirmatory Factor Analysis*** yang diselenggarakan oleh Fakultas Psikologi, Universitas Negeri Semarang. 
+Berikut adalah repositori yang digunakan untuk menyimpan semua materi untuk **Workshop *Confirmatory Factor Analysis*** yang diselenggarakan oleh Fakultas Psikologi, Universitas Negeri Semarang. Materi *workshop* ini merupakan bagian (yang dimodifikasi) dari *workshop* *Multigroup Structural Equation modeling* yang diadakan oleh Fakultas Psikologi Universitas Airlangga. Untuk mengakses materi dan rekaman dari *workshop* `MG-SEM`, silahkan [klik tautan ini](https://rameliaz.github.io/mg-sem-workshop/).
 
 Materi berlisensi [*Creative Commons* BY 4.0](https://creativecommons.org/licenses/by/4.0/). **Materi bebas digunakan kembali namun wajib mengatribusi sumber aslinya**.
 
@@ -14,9 +16,9 @@ Materi berlisensi [*Creative Commons* BY 4.0](https://creativecommons.org/licens
 Berikut adalah *outline* materi *workshop*: 
 
 ##### **Pengantar**
-* Apa itu *structural equation modeling* (SEM) atau *latent variable modeling* (LVM)?
-* Mengapa dan pada kondisi seperti apa SEM diperlukan?
-* Beberapa pilihan perangkat lunak untuk mengeksekusi SEM
+* Apa itu *latent variable modeling* (LVM)?
+* Mengapa dan pada kondisi seperti apa LVM diperlukan?
+* Beberapa pilihan perangkat lunak untuk mengeksekusi LVM
 * Yang tidak dicakup dalam *workshop* serta keterbatasan JASP
 
 ##### **Korelasi**
@@ -82,7 +84,9 @@ Berikut adalah *outline* materi *workshop*:
 ## Sebelum mulai workshop
 
 * Sebaiknya semua peserta sudah memasang [JASP versi 0.11.1](https://jasp-stats.org/download/) pada perangkatnya masing-masing, untuk menghindari terlalu banyaknya waktu untuk menyelesaikan *troubleshooting* instalasi ketika *workshop*.
-* Peserta sangat disarankan untuk [menonton video tutorial JASP](https://www.youtube.com/embed/HxqB7CUA-XI) sebelum *workshop* untuk belajar menavigasikan menu dan fitur yang ada dalam JASP (total durasi kurang lebih hanya 5 menit).
+* Peserta sangat disarankan untuk menonton video tutorial JASP di bawah ini sebelum *workshop* untuk belajar menavigasikan menu dan fitur yang ada dalam JASP (total durasi kurang lebih hanya 5 menit).
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/HxqB7CUA-XI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 
 
 ## Video rekaman
@@ -120,3 +124,4 @@ Berikut adalah *outline* materi *workshop*:
 ### Latihan Mandiri (3):
 
 [Klik disini untuk melihat jawaban]() saya atas latihan mandiri (3).
+

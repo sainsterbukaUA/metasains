@@ -1,0 +1,182 @@
+Nama Variabel,Format,Deskripsi/Label,Nilai
+id,"Numeric
+Width=3",nomor partisipan,
+kon1,"Numeric
+Width=1","Konservatif: Dibandingkan era Reformasi, pemerintah Orde Baru lebih berhasil mengelola negara","1: Sangat SEJALAN dengan pendapat saya
+7: Sangat SEJALAN dengan pendapat saya"
+kon2,"Numeric
+Width=1","Konservatif: Secara umum, saya menilai Suharto adalah presiden yang paling berhasil diantara presiden-presiden lainnya",
+kon3,"Numeric
+Width=1","Konservatif: Agar terbentuk pemerintahan yang kuat, TNI harus lebih banyak terlibat dalam mengelola pemerintahan",
+kon4,"Numeric
+Width=1",Konservatif: Saya lebih menyukai tokoh berlatar belakang militer untuk menjadi kepala daerah/negara,
+kon5,"Numeric
+Width=1",Konservatif: Negara seharusnya terus menyediakan subsidi energi (BBM & listrik) untuk masyarakat,
+kon6,"Numeric
+Width=1",Konservatif: Negara seharusnya mengatur siapa yang diprioritaskan mendapatkan pekerjaan dengan membatasi masuknya tenaga kerja asing,
+kon7,"Numeric
+Width=1","Konservatif: Tidak ada alasan untuk menambah utang luar negeri, meskipun negara membutuhkannya untuk membiayai pembangunan",
+kon8,"Numeric
+Width=1","Konservatif: Pemerintah tidak boleh membatasi aktivitas ormas yang ditengarai radikal, khususnya ormas keagamaan selama ormas tersebut tidak melanggar hukum",
+kon9,"Numeric
+Width=1","Konservatif: Melihat berbagai fenomena yang terjadi akhir-akhir ini, saya yakin sebenarnya Partai Komunis Indonesia (PKI) masih ada sampai saat ini dan dapat bangkit kembali sewaktu-waktu",
+kon10,"Numeric
+Width=1",Konservatif: Saya kurang setuju apabila seseorang yang berasal dari kelompok minoritas menjadi kepala daerah/negara,
+kon11,"Numeric
+Width=1",Konservatif: Nilai-nilai agama tidak boleh dipisahkan dari politik,
+kon12,"Numeric
+Width=1",Konservatif: Pemerintah harus mengakomodasi kepentingan umat mayoritas (Islam) diatas umat beragama yang lain,
+kon13,"Numeric
+Width=1",Konservatif: Orang yang menistakan agama harus dihukum berat,
+kon14,"Numeric
+Width=1","Konservatif: Dalam pemilihan umum, saya akan cenderung memilih kandidat yang mewakili kepentingan kelompok mayoritas (Islam)",
+kon15,"Numeric
+Width=1",Konservatif: Keputusan/kebijakan yang diambil oleh politisi terlalu banyak didikte oleh kepentingan orang-orang Tionghoa,
+kon16,"Numeric
+Width=1",Konservatif: Orang-orang Tionghoa terlalu dominan menguasai perekonomian di Indonesia,
+kon17,"Numeric
+Width=1",Konservatif: Radikalisme agama dan penggantian dasar Negara menjadi syariat Islam adalah isu yang sengaja dibesar-besarkan pemerintah untuk menjelekkan orang-orang Islam,
+nas1,"Numeric
+Width=1","Nasionalis: Dibandingkan era Orde Baru, pemerintahan setelah Reformasi lebih berhasil mengelola negara","1: Sangat SEJALAN dengan pendapat saya
+7: Sangat SEJALAN dengan pendapat saya"
+nas2,"Numeric
+Width=1","Nasionalis: Secara umum, saya menilai Suharto adalah presiden yang terburuk diantara presiden-presiden lainnya",
+nas3,"Numeric
+Width=1","Nasionalis: Agar terbentuk pemerintahan yang kuat, TNI tidak boleh terlalu banyak terlibat dalam mengelola pemerintahan",
+nas4,"Numeric
+Width=1",Nasionalis: Saya lebih menyukai tokoh sipil (non-militer) untuk menjadi kepala daerah/negara,
+nas5,"Numeric
+Width=1","Nasionalis: Subsidi energi membuat masyarakat menjadi malas, sehingga subsidi seharusnya dialokasikan untuk pembangunan",
+nas6,"Numeric
+Width=1","Nasionalis: Ditengah arus globalisasi yang kita hadapi saat ini, tidak mungkin kita membatasi arus lalu lintas barang dan jasa yang keluar-masuk Indonesia, termasuk tenaga kerja",
+nas7,"Numeric
+Width=1",Nasionalis: Utang luar negeri dibutuhkan agar pembangunan dapat mencapai target yang diinginkan pemerintah,
+nas8,"Numeric
+Width=1","Nasionalis: Pemerintah seharusnya melarang aktivitas ormas yang ditengarai radikal tanpa kecuali, khususnya ormas keagamaan",
+nas9,"Numeric
+Width=1",Nasionalis: Mempercayai bahwa PKI masih ada dan akan bangkit kembali adalah sesuatu yang tidak masuk akal,
+nas10,"Numeric
+Width=1","Nasionalis: Kepala daerah/negara yang berasal dari kelompok minoritas akan berdampak baik, terutama agar kelompok mayoritas lebih terbuka/toleran",
+nas11,"Numeric
+Width=1",Nasionalis: Politik harus dipisahkan dari nilai-nilai agama apapun,
+nas12,"Numeric
+Width=1","Nasionalis: Pemerintah harus mengakomodasi kepentingan umat beragama yang minoritas, karena umat Islam sudah mendapatkan terlalu banyak keistimewaan",
+nas13,"Numeric
+Width=1",Nasionalis: Sangat berlebihan apabila pelaku penistaan agama dijatuhi sanksi secara hukum,
+nas14,"Numeric
+Width=1","Nasionalis: Dalam pemilihan umum, saya akan cenderung memilih kandidat yang mewakili kepentingan kelompok minoritas, nasionalis dan pluralis",
+nas15,"Numeric
+Width=1","Nasionalis: Politisi terlalu didikte oleh kepentingan tokoh-tokoh Islam (Ulama, Kyai, Ustaz, dll.)",
+nas16,"Numeric
+Width=1",Nasionalis: Anggapan bahwa orang keturunan Tionghoa terlalu mendominasi perekonomian adalah berlebihan,
+nas17,"Numeric
+Width=1","Nasionalis: Radikalisme agama dan penggantian ideologi Negara berdasarkan syariat Islam adalah ancaman serius yang harus dicegah dengan cara apapun, termasuk dengan cara represif/pemaksaan",
+rwa1,"Numeric
+Width=1",Skala RWA: Negara ini membutuhkan pemimpin yang kuat agar dapat mengatasi buruknya moral dan akhlak yang sering kita temui di masyarakat saat ini,"1: Sangat SEJALAN dengan pendapat saya
+9: Sangat SEJALAN dengan pendapat saya"
+rwa2,"Numeric
+Width=1","Skala RWA: Negara kita membutuhkan pemimpin yang progresif, yang memiliki keberanian untuk berpendapat berbeda, meskipun pendapatnya menyinggung dan bertentangan dengan nilai-nilai yang dianut kebanyakan orang (reversed)",
+rwa3,"Numeric
+Width=1","Skala RWA: Nilai-nilai agama, meskipun terkesan ketinggalan jaman, merupakan tuntunan yang terbaik dalam menjalani hidup",
+rwa4,"Numeric
+Width=1",Skala RWA: Masyarakat kita akan lebih baik apabila kebanyakan orang dapat menunjukkan sikap toleran dan terbuka pada gagasan dan nilai-nilai yang berbeda (reversed),
+rwa5,"Numeric
+Width=1","Skala RWA: Ketetapan Tuhan mengenai aborsi, pornografi dan pernikahan harus diterapkan sesuai yang dianjurkan dalam kitab suci, sehingga pelanggar ketetapan tersebut harus diberikan hukuman",
+rwa6,"Numeric
+Width=1","Skala RWA: Masyarakat seharusnya didorong untuk lebih menerima orang dengan pemikiran yang berbeda daripada pemimpin yang berpendirian keras, karena saat ini negara tidak dalam kondisi yang berbahaya (reversed)",
+rwa7,"Numeric
+Width=1","Skala RWA: Menurut saya, lebih baik konten media massa harus diawasi ketat dan disensor apabila perlu, sehingga masyarakat tidak terpapar informasi yang tidak mendidik",
+rwa8,"Numeric
+Width=1","Skala RWA: Tidak semua orang yang mengkritik pemerintah dan tokoh agama adalah orang yang jahat, meskipun kadang-kadang mereka mengambil pilihan hidup yang berbeda dibandingkan kebanyakan orang (reversed)",
+rwa9,"Numeric
+Width=1","Skala RWA: Para pendahulu kita harus dihormati atas jasa-jasa mereka dalam membangun negara kita hingga seperti sekarang ini, sehingga kita perlu menindak orang-orang yang berusaha menghancurkan warisan dari pendahulu kita",
+rwa10,"Numeric
+Width=1","Skala RWA: Kita seharusnya tidak perlu kaku menerjemahkan perintah Tuhan dalam Kitab Suci, karena umumnya kita mampu membuat standar moral sendiri (reversed)",
+rwa11,"Numeric
+Width=1",Skala RWA: Ada banyak orang-orang yang jahat dan amoral yang berusaha merusak segalanya dan kita harus menghentikan usaha mereka,
+rwa12,"Numeric
+Width=1","Skala RWA: Saya menolak pelarangan atau penyensoran karya seni atau sastra, meskipun karya tersebut dianggap mengancam nilai-nilai yang dianut kebanyakan orang (reversed)",
+rwa13,"Numeric
+Width=1","Skala RWA: Melihat apa yang terjadi akhir-akhir ini, saya berpendapat kita semestinya menghukum lebih berat orang-orang yang melakukan perilaku seksual yang amoral dan kejahatan/kekerasan seksual, agar hukum benar-benar ditegakkan",
+rwa14,"Numeric
+Width=1",Skala RWA: Kondisi masyarakat kita akan lebih baik apabila orang-orang yang bermasalah diperlakukan dengan hormat dan manusiawi (reversed),
+rwa15,"Numeric
+Width=1","Skala RWA: Apabila memang dibutuhkan oleh masyarakat, menumpas hal-hal jahat yang merusak negara kita adalah kewajiban setiap warga negara",
+sdo1,"Numeric
+Width=1",SDO: Beberapa kelompok (ormas/etnis/agama) harus paham posisi mereka,"1: Sangat SEJALAN dengan pendapat saya
+7: Sangat SEJALAN dengan pendapat saya"
+sdo2,"Numeric
+Width=1","SDO: Sudah sewajarnya ada kelompok (ormas/etnis/agama) yang lebih berkuasa, sedangkan yang lainnya lebih lemah",
+sdo3,"Numeric
+Width=1",SDO: Masyarakat yang seimbang selalu terdiri atas satu kelompok (ormas/etnis/agama) yang lebih dominan dan sisanya adalah kelompok lainnya yang lebih lemah,
+sdo4,"Numeric
+Width=1",SDO: Beberapa kelompok (ormas/etnis/agama) memang secara alamiah lebih lemah dibandingkan yang lain,
+sdo5,"Numeric
+Width=1","SDO: Semua kelompok (ormas/etnis/agama) punya peluang sama untuk menjadi yang terkuat, ataupun yang terlemah (reversed)",
+sdo6,"Numeric
+Width=1",SDO: Tidak boleh ada kelompok (ormas/etnis/agama) tertentu yang terlalu berkuasa di masyarakat (reversed),
+sdo7,"Numeric
+Width=1",SDO: Kelompok (ormas/etnis/agama) minoritas tidak harus selalu menerima dominasi kelompok mayoritas begitu saja (reversed),
+sdo8,"Numeric
+Width=1",SDO: Dominasi satu kelompok (ormas/etnis/agama) tertentu adalah kondisi yang buruk (reversed),
+sdo9,"Numeric
+Width=1",SDO: Kesetaraan antar kelompok (ormas/etnis/agama) tidak mungkin dapat dicapai,
+sdo10,"Numeric
+Width=1",SDO: Tidak mungkin ada yang bisa menjamin bahwa semua anggota di berbagai kelompok (ormas/etnis/agama) memiliki kualitas hidup yang sama,
+sdo11,"Numeric
+Width=1",SDO: Memperlakukan semua kelompok (ormas/etnis/agama) secara setara justru bukan tindakan yang adil,
+sdo12,"Numeric
+Width=1",SDO: Menyetarakan perlakuan pada semua kelompok (ormas/etnis/agama) tidak harus menjadi prioritas utama,
+sdo13,"Numeric
+Width=1",SDO: Kita harus mengusahakan agar semua kelompok (ormas/etnis/agama) memiliki peluang yang sama untuk berhasil (reversed),
+sdo14,"Numeric
+Width=1",SDO: Kita harus mengupayakan semua hal yang perlu agar kondisi di kelompok (ormas/etnis/agama) yang berbeda akan setara (reversed),
+sdo15,"Numeric
+Width=1","SDO: Tak peduli seberapa besar upaya yang harus dilakukan, kita seharusnya menjamin agar semua anggota di kelompok (ormas/etnis/agama) yang berbeda memiliki kesempatan yang sama dalam menjalani hidupnya (reversed)",
+sdo16,"Numeric
+Width=1",SDO: Kesetaraan antar kelompok (ormas/etnis/agama) harus menjadi kondisi ideal yang ingin dicapai bersama (reversed),
+rz1,"Numeric
+Width=1",Skala Religious Zeal: Saya sangat mengimani agama yang saya anut,"1: Sangat bertentangan  dengan diri saya
+5: Sangat sesuai  diri saya"
+rz2,"Numeric
+Width=1",Skala Religious Zeal: Saya selalu berusaha untuk menyesuaikan perilaku saya sehari-hari dengan nilai-nilai dari agama yang saya anut,
+rz3,"Numeric
+Width=1",Skala Religious Zeal: Ajaran agama yang saya anut dilandasi oleh kebenaran yang hakiki,
+rz4,"Numeric
+Width=1","Skala Religious Zeal: Kebanyakan orang akan setuju dengan nilai-nilai Agama yang saya anut, apabila mereka berupaya sungguh-sungguh dalam memahaminya dan tidak sekedar mengandalkan anggapan buruk (stereotip) mengenai pemeluknya",
+rz5,"Numeric
+Width=1","Skala Religious Zeal: Apabila kepercayaan yang saya anut diserang didepan umum, maka saya tidak ragu membela kepercayaan saya",
+rz6,"Numeric
+Width=1","Skala Religious Zeal: Saya membenarkan tindakan kekerasan, baik verbal maupun fisik, apabila hal tersebut terpaksa dilakukan untuk membela kepercayaan saya",
+rz7,"Numeric
+Width=1","Skala Religious Zeal: Saya tidak ragu untuk mencurahkan seluruh hidup saya untuk menaati perintah agama, apabila Tuhan berkehendak",
+rz8,"Numeric
+Width=1","Skala Religious Zeal: Dari hati yang terdalam, saya yakin bahwa Agama yang saya anut adalah satu-satunya yang mengandung kebenaran, bila dibandingkan dengan kepercayaan lainnya",
+rz9,"Numeric
+Width=1",Skala Religious Zeal: Saya akan mengupayakan segala hal yang perlu dilakukan untuk memakmurkan Agama yang saya anut,
+rz10,"Numeric
+Width=1",Skala Religious Zeal: Menjaga jarak dengan pihak-pihak yang menghalangi saya untuk menjalani hidup sesuai Agama yang saya anut adalah tindakan yang bijaksana,
+rz11,"Numeric
+Width=1","Skala Religious Zeal: Pada akhirnya, orang-orang yang bertindak semena-mena pada Agama yang saya anut akan menerima hukuman atas ketidaktahuan mereka",
+rz12,"Numeric
+Width=1","Skala Religious Zeal: Jika semua orang menjadi pengikut Agama yang saya anut, dunia yang kita hadapi saat ini akan menjadi jauh lebih baik",
+rz13,"Numeric
+Width=1","Skala Religious Zeal: Ada banyak informasi yang menyesatkan mengenai Agama yang saya anut, sehingga Agama saya tidak dipahami dengan benar",
+rz14,"Numeric
+Width=1","Skala Religious Zeal: Bila memang perlu, lebih baik saya menanggung penderitaan yang terberat sekalipun daripada harus melepaskan iman saya pada Agama yang saya anut",
+rz15,"Numeric
+Width=1",Skala Religious Zeal: Agama yang saya anut dapat memberikan solusi atas tantangan yang dihadapi masyarakat dewasa ini,
+rz16,"Numeric
+Width=1",Skala Religious Zeal: Hubungan saya dengan saudara-saudara saya yang seiman adalah yang terkuat dan terdalam,
+tjokowi,"Numeric
+Width=3",Termometer sikap: Jokowi,"1: sangat positif (dingin)
+101: sangat negatif (panas)"
+tprabowo,"Numeric
+Width=3",,"1: sangat positif (dingin)
+101: sangat negatif (panas)"
+preferensi,"Numeric
+Width=2","Preferensi kandidat: Apabila pemilihan presiden dilakukan hari ini, siapa kandidat yang mungkin ada pilih?","1: pasti memilih Jokowi-Ma'ruf
+11: pasti memilih Prabowo-Sandi"
+gender,"Numeric
+Width=1",Jenis kelamin,"1: Laki-laki
+2: Perempuan"

@@ -1,0 +1,367 @@
+---
+title: "Workshop LVM Bagian 4"
+subtitle: "UNNES"
+author: "Rizqy Amelia Zein"
+date: "2020/01/29 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    chakra: libs/remark-latest.min.js
+    css: ["default", "rladies", "rladies-fonts"]
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      ratio: '16:9'
+      highlightLines: true
+      countIncrementalSlides: false
+vignette: >
+  %\VignetteIndexEntry{libs}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+class: inverse, middle, title-slide, spaced
+
+```{r setup, include=FALSE}
+library(fontawesome)
+library(tidyverse)
+library(emo)
+options(htmltools.dir.version = FALSE, width=120)
+```
+
+class: title-slide, spaced
+
+<img src="libs/unair.png" style="width:15%;" class="fancyimage"/> <img src="libs/STUA.png" style="width:23%;" class="fancyimage"/> <img src="libs/ina-logo.jpg" style="width:7%;" class="fancyimage"/> <img src="libs/igdore.png" style="width:23%;" class="fancyimage"/>
+
+# Workshop Latent Variable Modeling (LVM)
+## Menggunakan `JASP`: Bagian 4 - *Confirmatory Factor Analysis*
+<br>
+### <b>Rizqy Amelia Zein</b>
+* Dosen, [Fakultas Psikologi, Universitas Airlangga](https://psikologi.unair.ac.id)
+* Anggota, [#SainsTerbuka Airlangga](https://sainsterbukaua.github.io/) `r fa("universal-access")`
+* Relawan, [INA-Rxiv](https://inarxiv.id) 
+* Researcher-in-training, [Institute for Globally Distributed Open Research and Education (IGDORE)](https://igdore.org/)
+
+---
+
+# Analisis faktor
+
+.pull-left[
+
+* Awalnya dikembangkan oleh Charles Spearman (1904) untuk menyelidiki [*g factor theory of intelligence*](https://en.wikipedia.org/wiki/G_factor_(psychometrics))
+
+* Terdiri dari:
+  - *Exploratory factor analysis* (EFA) 
+  - *Confirmatory factor analysis* (CFA)
+
+* Analisis faktor digunakan untuk menguji model *common variance* 
+
+* Mengasumsikan bahwa dua atau lebih *observed variable* memiliki *shared/common variance* (*commonality* atau *common factor*) `r fa("arrow-circle-right")` ditunjukkan dengan ***factor loading***
+
+]
+
+.pull-right[
+
+![](https://media.giphy.com/media/l0IyjeA5mmMZjhyPm/giphy.gif)
+
+]
+
+---
+
+# EFA vs CFA
+
+| EFA | CFA |
+| --- | --- |
+| Mencari model yang cocok menggambarkan data, sehingga peneliti **mengeksplorasi berbagai pilihan model** yang cocok kemudian mencari rasionalisasi teoritisnya | Menguji hipotesis yang **sudah ditentukan sebelumnya**, sehingga peneliti ingin tahu apakah hipotesisnya didukung oleh data |
+| Jumlah faktor belum diketahui sampai peneliti melakukan analisisnya | Jumlah faktor sudah ditentukan sebelum mengambil data |
+| Peneliti **tidak memiliki** model yang dihipotesiskan *a priori* | Peneliti **sudah memiliki** model hipotesis yang ditentukan *a priori* |
+
+---
+
+# *Confirmatory factor analysis*
+
+* Menyediakan solusi untuk mengkoreksi bias karena *measurement error* ketika mengestimasi korelasi antar-variabel
+
+* Cara kerjanya adalah dengan membandingkan *variance-covariance matrix* yang dihipotesiskan dengan *variance-covariance matrix* pada data (sampel)
+
+* **Perhatian**`r emo::ji("loud")`
+  - **Sangat tidak disarankan** untuk melakukan EFA kemudian CFA pada **sampel yang sama**
+  - Karena *generating hypothesis* dengan *testing hypothesis* adalah dua proses yang berbeda yang **tidak seharusnya** dilakukan pada sampel yang sama
+  - Kalau hal tsb dilakukan, maka tentu saja peneliti akan mendapatkan hasil yang 'sesuai prediksinya'
+  - Ingat [Texas Sharpshooter Fallacy](https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy#:~:targetText=The%20Texas%20sharpshooter%20fallacy%20is,a%20false%20conclusion%20is%20inferred.)
+
+---
+
+class: middle, center
+
+![](https://i0.wp.com/www.bayesianspectacles.org/wp-content/uploads/2018/01/TexasSharpShooter.png?fit=357%2C300&ssl=1)
+
+---
+
+# [*Constraining parameter* model](https://psycnet.apa.org/record/2008-06808-005)
+
+* **Membatasi/menentukan varians** untuk setiap **variabel/faktor laten**
+  - Dilakukan untuk mengeluarkan ***standardised estimates***
+  - ...yang interpretasinya sama seperti *standardised estimates* di regresi linear
+  - *Factor loading* di *z-score*kan
+  - Sehingga *default*nya, *mean* variabel laten = 0, *variance* = 1
+
+* Membatasi/menentukan ***error covariance*** untuk setiap variabel/faktor laten
+  - Dilakukan untuk **menentukan *error variance***
+
+---
+
+# Jenis-jenis model pengukuran
+
+* *Congeneric*
+  - Model yang paling moderat dan *default* di berbagai perangkat lunak SEM
+  - Asumsinya, **skala, *error variance*, dan *factor loading* boleh berbeda (dibebaskan)**
+  - **Teknik reliabilitas skala** yang mengasumsikan model pengukuran *congeneric* `r fa("arrow-circle-right")` ω, McDonald's ω, ω total (ω<sub>*t*</sub>), Revelle's ω, Raju's *coefficient*, *composite reliability*.
+
+* *Tau equivalence*
+  - Model yang sedikit lebih rigid daripada *congeneric*
+  - Asumsinya, **skala dan *error variance* boleh berbeda (dibebaskan)**, namun ***factor loading* harus sama (dibatasi)**
+  - Ketika asumsi *tau equivalence* dipenuhi, maka [Cronbach's α dapat digunakan](https://www.ncbi.nlm.nih.gov/pubmed/28557467)
+  - Selain Cronbach's α, **teknik reliabilitas skala** yang mengasumsikan model pengukuran *tau equivalence* `r fa("arrow-circle-right")` Formula Rulon, KR-20, Flanagan-Rulon Formula, Guttman's λ<sub>3</sub>, Guttman's λ<sub>4</sub> dan Hoyt *method*.
+
+* Paralel
+  - Model yang paling rigid
+  - Asumsinya, **skala, *error variance*, dan *factor loading* harus sama (dibatasi)**
+  - **Teknik reliabilitas skala** yang mengasumsikan model pengukuran paralel `r fa("arrow-circle-right")` Spearman-Brown's Formula, Standardised α.
+    
+---
+
+class: center, middle
+
+<center><img src="libs/congeneric.png" style="width=100%;" class="fancyimage"/></center><br>
+
+---
+
+class: center, middle
+
+<center><img src="libs/tau.png" style="width=100%;" class="fancyimage"/></center><br>
+
+---
+
+class: center, middle
+
+<center><img src="libs/paralel.png" style="width=100%;" class="fancyimage"/></center><br>
+
+---
+
+# Reflektif vs Formatif
+
+* Reflektif
+  - **Variabel laten menjelaskan** mengapa **variabel indikator bervariasi**
+  - Misalnya `r fa("arrow-circle-right")` individu dengan intelegensi yang tinggi akan mendapatkan nilai yang berbeda dalam tes matematika
+  - Dalam hal ini, variasi **intelegensi**lah yang menjelaskan mengapa nilai tes matematika bervariasi
+  - Biasanya mengasumsikan bahwa **korelasi antar-variabel indikator = 0**, karena seharusnya ketika (misalnya) nilai tes matematika dan fisika berkorelasi, korelasi tersebut **dijelaskan oleh faktor laten yang sama (intelegensi)**
+
+* Formatif
+  - **Variabel *observed* menjelaskan** mengapa **variabel laten bervariasi**
+  - Misalnya `r fa("arrow-circle-right")` gengsi sebuah mobil ditentukan oleh usia mobil, kondisi, harga, dan intensitas pemakaian
+  - Korelasi antara variabel *observed* tidak diketahui. Bisa jadi = 0, positif, atau negatif
+  - Biasanya digunakan untuk menentukan indeks pada konstruk yang *orthogonal* (contoh `r fa("arrow-circle-right")` kepribadian pada *Five Factor model*)
+
+---
+
+class: center, middle
+
+<center><img src="libs/reflektif.png" style="width=100%;" class="fancyimage"/></center><br>
+
+---
+
+class: center, middle
+
+<center><img src="libs/formatif.png" style="width=60%;" class="fancyimage"/></center><br>
+
+---
+
+# Apa yang terjadi ketika *error variance* berkorelasi?
+
+<center><img src="libs/correlated-error.png" style="width=6%;" class="fancyimage"/></center><br>
+
+* Kedua variabel indikator tersebut mengukur variabel laten lain di luar model (*unique factor*)
+* Bisa jadi karena ada aitem *unfavourable* dalam skala 
+* Kemungkinan konstruk laten **bukan konstruk tunggal** (multidimensi)
+* Perhatikan justifikasi teori ketika menambah *error covariance* (korelasi antar-varians *error*)
+
+---
+
+# Skor faktor (*factor scores*)
+
+* Apabila kita memiliki informasi tentang *factor loading*, maka kita bisa menghitung *factor scores* `r fa("arrow-circle-right")` **estimasi** (*fitted*) skor variabel laten
+
+* Caranya dengan mengali *factor loading* dengan skor kasar `r fa("arrow-circle-right")` metode regresi
+
+* Namun ingat, mengalikan *factor loading* dengan skor kasar **masih berisiko mendapatkan estimasi yang bias**, karena kedua parameter berasal dari distribusi data yang berbeda, sehingga ***standard error*nya akan berbeda di berbagai kelompok sampel**. Itulah yang menyebabkan *factor scores* akan berubah, ketika model diujikan pada kelompok sampel yang berbeda.
+
+* Ada tiga cara yang bisa digunakan untuk meghitung *factor scores*:
+  - **Metode Regresi** `r fa("arrow-circle-right")` dengan mengoptimalisasi validitas konstruk (*variance explained*)
+  - **Metode Bartlett** `r fa("arrow-circle-right")` mengasumsikan variabel indikator **tidak saling berkorelasi**
+  - **Metode Anderson-Rubin** `r fa("arrow-circle-right")` mengasumsikan variabel indikator **saling berkorelasi**
+
+---
+
+# Memilih metode estimasi
+
+* *Maximum Likelihood* `r fa("arrow-circle-right")` distribusi data (*multivariate*) normal, level pengukuran harus interval, tidak ada data *missing*
+
+* *Generalized least squares* `r fa("arrow-circle-right")` menggunakan asumsi yang sama dengan `ML` namun performanya kurang baik apabila dibandingkan dengan `ML`
+
+* *Weighted least squares* `r fa("arrow-circle-right")` dapat digunakan pada data kategorikal (nominal dan ordinal), estimasi menggunakan *polychoric correlation matrix*
+
+* *Diagonally weighted least squares* `r fa("arrow-circle-right")` dapat digunakan pada data kategorikal, estimasi menggunakan *polychoric correlation matrix* yang kemudian dikonversi menjadi *asymptotic covariance matrix*, berkerja dengan baik pada sampel yang relatif kecil dan data yang tidak berdistribusi normal
+
+---
+
+# Mengestimasi model
+
+* Pilih **metode estimasi** yang paling cocok dengan karakteristik data (`ML`, `ULS`, `GLS`, `WLS`, `DWLS` atau *robust* `DWLS`)
+
+* Metode estimasi ini yang akan menghitung *standard error*, apabila metode estimasi yang dipilih tidak tepat dan tidak sesuai dengan kompatibilitas datanya, maka estimasi *standard error* menjadi bias `r fa("arrow-circle-right")` model memberikan informasi yang menyesatkan
+
+# Menguji model
+
+* Dalam tahap ini, peneliti perlu mengetahui apakah *implied model*nya didukung oleh data atau tidak
+
+* Hal ini dapat dievaluasi melalui uji ketepatan model (*omnibus model fit*) dengan beberapa parameter kriteria
+  
+---
+
+# Menguji ketepatan model
+
+* Umumnya peneliti ingin mendapatkan 3 informasi
+  - ***Chi-square* sebagai *global fit measure***. *Chi-square* menguji perbedaan antara *model-implied* dengan *sample covariance matrix*. Apabila *p-value* dari *Chi-square*>=α (dengan α=0.05), maka **tidak ada perbedaan** antara keduanya `r fa("arrow-circle-right")` data mendukung model
+  
+  - ***p-value* dari *factor loading*** untuk setiap variabel dalam model. Perhitungan *p-value* untuk *factor loading* menggunakan *t-statistics* (formula yang sama dengan *t-test*). Namun **parameter yang lebih penting** adalah...
+  
+  - **Besar dan arah *factor loading***. Besar *factor loading* memberikan informasi mengenai *magnitude* (besar efek/*effect size*) dan kontribusi variabel tersebut dalam menjelaskan variabel lainnya. Sedangkan arah *factor loading* (positif/negatif) memberikan informasi mengenai arah hubungan
+  
+---
+
+## Menguji ketepatan model: *Chi-square* (*X*<sup>2</sup>)
+
+.pull-left[
+* Dihitung dengan cara membandingkan ***saturated model* dengan model tanpa jalur sama sekali** (*baseline*, *null*, atau *independent model*)
+
+* Kok *saturated model*? Bukannya *saturated model* tidak bisa dianalisis?
+  - Iya betul, *saturated model* tidak dapat dijadikan *implied model*, tetapi berguna untuk menghitung nilai *X*<sup>2</sup>
+
+* Selain *X*<sup>2</sup>, kita bisa menggunakan *alternative fit indices* (yang penggunaannya cenderung menggunakan *rule of thumb*) yang terdiri dari
+  - *Incremental index*
+  - *Parsimony index*
+  - *Absolute (standalone) index*
+
+]
+
+.pull-right[
+  
+![](https://media.giphy.com/media/xT0xeuOy2Fcl9vDGiA/giphy.gif)
+]
+
+---
+
+# *Incremental (comparative/relative) index*
+
+* Didapatkan dengan membandingkan *implied model* dengan *baseline model*, meliputi
+  - ***Comparative Fit Index*** `r fa("arrow-circle-right")` mendekati 1 = *closer fit*
+  
+  - ***Normed Fit Index*** `r fa("arrow-circle-right")` mendekati 1 = *better fit*
+  
+  - ***Parsimonious Normed Fit Index*** `r fa("arrow-circle-right")` NFI yang mempertimbangkan *parsimony* model, mendekati 1 = *better fit*
+  
+  - ***Incremental Fit Index*/*Bollen's Nonnormed Fit Index*** `r fa("arrow-circle-right")` NFI yang mempertimbangkan *parsimony* model, mendekati 1 = *better fit*
+  
+  - ***Tucker Lewis Index*/*Bentler-Bonnet Non-Normed Fit Index*** `r fa("arrow-circle-right")` mendekati 1 = *better fit*
+
+---
+
+# *Parsimony index*
+
+* Indeks ini secara khusus memberikan pinalti pada kompleksitas model, sehingga umumnya model dengan jalur yang lebih banyak (sehingga *df*nya lebih kecil) akan mendapat pinalti
+
+* Indeks-indeksnya meliputi
+  - ***Expected Cross Validation Index*** `r fa("arrow-circle-right")` digunakan untuk membandingkan dua model atau lebih. Nilai yang lebih kecil menunjukkan model yang lebih baik
+  - ***Information-Theoretic Criterion*** `r fa("arrow-circle-right")` meliputi *Akaike's Information Criterion*, *Schwarz'a Bayesian Information Criteria* dan *Sample-size Adjusted Bayesian Information Criteria*. Nilai yang kecil menunjukkan model yang lebih baik
+  - ***Noncentrality Parameter-based Index*** `r fa("arrow-circle-right")` mendekati 1 = *better fit*
+  - ***McDonald's Noncentrality Index*** `r fa("arrow-circle-right")` mendekati 1 = *better fit*
+  
+* **Yang paling sering digunakan adalah**...
+
+* ***Root Mean Square Error of Approximation* (RMSEA)** `r fa("arrow-circle-right")` menilai apakah model secara umum tepat menggambarkan data dan biasanya berkisar antara 0.0-1.0, meskipun dapat lebih dari 1. Model ***close fit*** ketika nilainya **0.05 - 0.08**
+  - Ada beberapa perangkat lunak (termasuk `JASP`) yang bisa mengkalkulasi *confidence interval* dan *p-value*nya.
+  - *P-value* ini dapat digunakan untuk menolak *H*<sub>0</sub>: RMSEA = 0.05
+  - Oleh karena itu, **menolak *H*<sub>0</sub>** menunjukkan bahwa model "*close-fitting*"
+
+---
+
+# *Absolute index*
+
+* Indeks ini dihitung tanpa melakukan perbandingan dengan *baseline*
+
+* Meliputi
+  - ***Chi-square*** (*X*<sup>2</sup>)/*df* ratio
+  - ***Goodness of Fit Index*** `r fa("arrow-circle-right")` mendekati 1 = *better fit*
+  - ***Adjusted Goodness of Fit Index*** `r fa("arrow-circle-right")` merupakan *parsimony adjustment* dari GFI, mendekati 1 = *better fit*
+  - ***Parsimony Goodness of Fit Index*** `r fa("arrow-circle-right")` mendekati 1 = *better fit*
+  - ***Hoelter's Critical n*** `r fa("arrow-circle-right")` nilainya sebaiknya > 200
+  - ***Standardized Root Mean Square Residual*** (SRMR/RMR) `r fa("arrow-circle-right")` paling baik digunakan untuk membandingkan dua model yang diuji di satu kelompok sampel yang sama, nilai < 0.05 menunjukkan *good fit*
+
+---
+
+# *Parameter fit*
+
+* Parameter jalur bisa ditolak meskipun hasil *omnibus test* memuaskan, sehingga menginterpretasi koefisien jalur adalah proses yang juga harus dilakukan.
+
+* Berikut ini adalah beberapa prosedur yang direkomendasikan:
+  - Lihat tanda *factor loading*, apakah **arahnya sudah benar** (negatif/positif)
+  
+  - Lihat *standardised parameter estimates* untuk tahu apakah ada *factor loading* yang **nilainya diatas kewajaran**
+  
+  - Lihat *p-value* untuk mempertimbangan **menolak *H*<sub>0</sub>** (bahwa tidak ada korelasi atau *direct effect* antara dua variabel)
+  
+  - Lakukan pengujian *measurement invariance* dengan mengasumsikan beberapa *factor loading* sama di berbagai kelompok yang berbeda (misal gender, dll), kemudian buat perbandingan relatif antara *factor loading* di kelompok yang berbeda tersebut
+  
+  - Apabila *error variance* mendekati nol (yang menyiratkan bahwa variabel *observed* adalah indikator yang 'nyaris sempurna' bagi variabel laten -- **tapi ini tidak mungkin**), hal tsb lebih mungkin disebabkan oleh adanya *outlier*, kurangnya jumlah sampel, atau kurangnya jumlah indikator
+  
+---
+
+class: inverse, middle, center
+
+# Demonstrasi CFA
+
+![](https://media.giphy.com/media/3oEjHZPivwdJ0syhKE/giphy.gif)
+
+### [Unduh Dataset Contoh CFA](https://rameliaz.github.io/mg-sem-workshop/contoh-cfa.jasp)
+
+---
+
+# TUGAS 3: Mencoba *confirmatory factor analysis*
+
+* Unduh [Dataset Latihan SEM](https://rameliaz.github.io/lvm-cfa/dataset-wave1.csv)
+
+* Unduh [Kamus Data disini](https://rameliaz.github.io/lvm-cfa/codebook-kamusdata.xlsx)
+
+* Lakukan CFA pada skala *right-wing authoritarianism* 
+  - Diukur dengan skala *Likert*, 15 aitem dengan 9 pilihan jawaban
+
+* Laporkan *model fit*, *factor loading*, dan *multivariate normality*
+
+* Lakukan penyesuaian apabila perlu
+
+* *Export* datasetnya menjadi `.html` kemudian 
+
+### [Kumpulkan tugasnya disini](https://forms.gle/eNGD2LSzqaZc2nXM7)
+
+---
+
+class: center, middle
+
+# Terima kasih banyak! `r emo::ji("wink")`
+
+![](https://media.giphy.com/media/hrBSJ2So6iTo4/giphy.gif)
+
+Paparan disusun dengan menggunakan `r fa("r-project")` *package* [**xaringan**](https://github.com/yihui/xaringan) dengan *template* dan *fonts* dari `R-Ladies`.
+
+*Chakra* dibuat dengan [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), dan [R Markdown](https://rmarkdown.rstudio.com).

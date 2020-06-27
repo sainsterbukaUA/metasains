@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Workshop LVM Bagian 2</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rizqy Amelia Zein" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: inverse, middle, title-slide, spaced
+
+
+
+class: title-slide, spaced
+
+&lt;img src="libs/unair.png" style="width:15%;" class="fancyimage"/&gt; &lt;img src="libs/STUA.png" style="width:23%;" class="fancyimage"/&gt; &lt;img src="libs/ina-logo.jpg" style="width:7%;" class="fancyimage"/&gt; &lt;img src="libs/igdore.png" style="width:23%;" class="fancyimage"/&gt;
+
+# Workshop Latent Variable Modeling (LVM)
+## Menggunakan `JASP`: Bagian 2 - Korelasi
+&lt;br&gt;
+### &lt;b&gt;Rizqy Amelia Zein&lt;/b&gt;
+* Dosen, [Fakultas Psikologi, Universitas Airlangga](https://psikologi.unair.ac.id)
+* Anggota, [#SainsTerbuka Airlangga](https://sainsterbukaua.github.io/) &lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 512 512"&gt;&lt;path d="M256 48c114.953 0 208 93.029 208 208 0 114.953-93.029 208-208 208-114.953 0-208-93.029-208-208 0-114.953 93.029-208 208-208m0-40C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 56C149.961 64 64 149.961 64 256s85.961 192 192 192 192-85.961 192-192S362.039 64 256 64zm0 44c19.882 0 36 16.118 36 36s-16.118 36-36 36-36-16.118-36-36 16.118-36 36-36zm117.741 98.023c-28.712 6.779-55.511 12.748-82.14 15.807.851 101.023 12.306 123.052 25.037 155.621 3.617 9.26-.957 19.698-10.217 23.315-9.261 3.617-19.699-.957-23.316-10.217-8.705-22.308-17.086-40.636-22.261-78.549h-9.686c-5.167 37.851-13.534 56.208-22.262 78.549-3.615 9.255-14.05 13.836-23.315 10.217-9.26-3.617-13.834-14.056-10.217-23.315 12.713-32.541 24.185-54.541 25.037-155.621-26.629-3.058-53.428-9.027-82.141-15.807-8.6-2.031-13.926-10.648-11.895-19.249s10.647-13.926 19.249-11.895c96.686 22.829 124.283 22.783 220.775 0 8.599-2.03 17.218 3.294 19.249 11.895 2.029 8.601-3.297 17.219-11.897 19.249z"/&gt;&lt;/svg&gt;
+* Relawan, [INA-Rxiv](https://inarxiv.id) 
+* Researcher-in-training, [Institute for Globally Distributed Open Research and Education (IGDORE)](https://igdore.org/)
+
+---
+
+class: inverse
+
+# Mengapa memulai dari korelasi?
+
+--
+
+#### LVM-SEM merupakan teknik yang digunakan untuk **mengestimasi korelasi** antar-variabel
+
+--
+
+#### Untuk melakukan SEM, peneliti tidak harus menyediakan data kasar (*raw data*), tetapi ada pilihan untuk meng*input* *correlation* atau *variance-covariance matrix*.
+
+![](https://media.giphy.com/media/ChzfTLSi47FYc/giphy.gif)
+
+
+---
+
+# Jenis-jenis korelasi
+
+| Koefisien Korelasi | Level Pengukuran |
+| ------------------ | ---------------- |
+| *Pearson's product moment* | Kedua variabel setidaknya interval |
+| *Spearman's rank* dan *Kendall's tau* | Kedua variabel ordinal |
+| *Phi*, *contingency table* | Kedua variabel nominal |
+| *Point biserial* | Variabel interval dengan nominal |
+| *Gamma*, *rank biserial* | Variabel ordinal dengan nominal |
+| *Biserial* | Variabel interval dengan *dummy* |
+| [*Polyserial*](https://link.springer.com/article/10.1007/BF02294164) | Variabel interval dengan variabel *underlying continuity* |
+| *Tetrachoric* | Kedua variabel *dummy* (dikotomis) |
+| *Polychoric* | Kedua variabel ordinal (dengan kontinuitas implisit) |
+
+---
+
+# Faktor-faktor yang mempengaruhi korelasi
+
+* **Level pengukuran** (apakah variabel tersebut nominal, ordinal, interval, atau rasio)
+  - Sehingga berdampak pada **variabilitas** (*restriction range*) dan **normalitas data**
+* **Linearitas**
+  - Semua teknik korelasi mengasumsikan korelasi antar-variabel linear, sehingga korelasi yang tidak linear akan memberikan informasi **tidak adanya korelasi** (padahal tidak selalu).
+* **Adanya data *outlier* **
+* **Koreksi atenuasi**
+* **Jumlah sampel**
+  - Jumlah sampel yang terlalu sedikit akan memberikan estimasi yang kurang akurat (karena *standard error*nya besar)
+* ***Sampling variance***
+  - Yang kemudian berefek pada *confidence interval*, *effect size* (koefisien korelasi itu sendiri), dan *statistical power*
+* ***Missing data***
+  - Kalau data tidak lengkap, estimasi koefisien korelasi akan langsung terdampak.
+  - Ada beberapa pilihan yang bisa dilakukan, yaitu &lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 512 512"&gt;&lt;path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/&gt;&lt;/svg&gt; *listwise deletion*, *pairwise deletion*, dan melakukan *data imputation*.
+  - *Listwise deletion* tidak disarankan karena membuat jumlah sampel turun drastis &lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 512 512"&gt;&lt;path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/&gt;&lt;/svg&gt; mengurangi *statistical power*.
+  
+#### Silahkan unduh dan buka [**Dataset Contoh Korelasi**](https://rameliaz.github.io/lvm-cfa/corr.jasp), untuk melihat contoh.
+
+---
+
+class: center, middle
+
+![](https://i2.wp.com/peterjamesthomas.com/wp-content/uploads/2019/09/xkcd-extrapolating.png)
+  
+
+
+---
+
+# *Variance-covariance* dan *correlation matrix* (1)
+
+* Untuk melakukan SEM, maka perangkat lunak membutuhkan *variance-covariance matrix* untuk mengestimasi parameter model
+* Pada bagian diagonal *variance-covariance matrix* menunjukkan varians, sedangkan sisanya adalah *covariance*
+
+&lt;center&gt;&lt;img src="libs/varcovarmatrix.png" style="width:50%;" class="fancyimage"/&gt;&lt;/center&gt;&lt;br&gt;
+
+* Jumlah nilai unik (*non-redundant information*) dalam *variance-covariance matrix* adalah ***p*(*p*+1)/2**
+  - dimana *p* adalah jumlah *observed variable*
+  - Sehingga dengan contoh di atas maka jumlah nilai unik (*non-redundant information*) di *variance-covariance matrix* adalah 3(3+1)/2=6, yaitu **3 varians (diagonal)** dan **3 *covariance* (sisanya)**
+
+---
+
+# *Variance-covariance* dan *correlation matrix* (2)
+
+.pull-left[
+
+* Sebagian besar perangkat lunak SEM menggunakan ***variance-covariance matrix*** bukan *correlation matrix*
+  - Ingat ❗ korelasi adalah *standardised covariance*.
+
+* Menggunakan *correlation matrix* biasanya lebih sering menghasilkan **parameter yang *statistically significant* tapi *standard error* yang tidak akurat**.
+
+* Oleh karena itu, meskipun *user* meng*input* *correlation matrix*, maka perangkat lunak akan mengubahnya dulu menjadi *variance-covariance matrix* dulu, baru parameter model dapat diestimasi.
+
+
+]
+
+.pull-right[
+
+![](https://media.giphy.com/media/l2Je34w7WkZ84f3os/giphy.gif)
+
+]
+
+---
+
+# Koreksi Atenuasi
+
+* Asumsi dasar dalam Psikometri adalah skor kasar (*observed score*) mengandung skor murni (*true score*) dan *measurement error*, sehingga dalam mengestimasi korelasi, *measurement error* perlu dibuang agar estimasi lebih akurat.
+
+* Dengan teknik *koreksi atenuasi*, kita dapat 'membuang' *measurement error*, sehingga kita dapat mengestimasi korelasi antar-variabel menggunakan *true score*-nya.
+
+* Tetapi apabila reliabilitas skala kita kurang baik, maka setelah dikoreksi **koefisien korelasi bisa lebih dari 1** ❗
+
+* Misalnya diketahui bahwa korelasi *observed scores* antar dua variabel (*r*&lt;sub&gt;ab&lt;/sub&gt;) adalah 0.9 dan reliabilitas skala *a* (Cronbach's α) adalah 0.6 dan skala *b* adalah 0.7, maka:
+
+&lt;center&gt;&lt;img src="libs/cor-an.png" style="width:20%;" class="fancyimage"/&gt;&lt;/center&gt;&lt;br&gt;
+
+---
+
+class: inverse, middle, center
+
+# WARNING! Covariance/correlation matrix is not positive definite
+
+&lt;center&gt;&lt;img src="libs/gosling-corr.jpg" style="width=30%;" class="fancyimage"/&gt;&lt;/center&gt;&lt;br&gt;
+
+---
+
+class: inverse, middle, center
+
+# Apa yang terjadi?
+
+#### Perangkat lunak akan menghentikan proses estimasi
+
+#### ...dan memberikan pesan *non-positive definite*
+
+![](https://media.giphy.com/media/SDogLD4FOZMM8/giphy.gif)
+
+---
+
+# Matrik korelasi dengan *non-positive definite*
+
+* Koefisien korelasi yang nilainya ≥1 menyebabkan matriks korelasi menjadi *non-positive definite*
+  - Artinya, parameter model tidak mungkin diestimasi
+
+* Mengapa terjadi?
+  - Data didapatkan dari observasi yang **tidak independen** (*linear dependency*)
+  - Terjadi **multikolinearitas**
+  - **Jumlah sampel** lebih **sedikit** dari jumlah variabel yang diuji dalam model
+  - Sepasang variabel berbagi **varians negatif** atau **tidak sama sekali** (0) &lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 512 512"&gt;&lt;path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/&gt;&lt;/svg&gt; *Heywood case*
+  - Varians, kovarians, dan korelasi nilainya diluar batas kewajaran
+  - Kesalahan mengatur pembatasan (*constraint*) pada parameter tertentu yang dilakukan oleh peneliti (*user-specified model*)
+
+---
+
+# *Heywood* dan *ultra-Heywood case*
+
+* Terjadi ketika *communalities* = 1 (*Heywood*) atau ≥1 (*ultra-Heywood*), atau terjadi ketika varians *measurement error* bernilai negatif
+  - *Communalities* adalah kuadrat dari koefisien korelasi (*R*&lt;sup&gt;2&lt;/sup&gt;)
+  - Apabila terjadi, maka ada yang salah dengan spesifikasi model (hipotesis)
+
+* Terjadi karena
+  - *Common factor* terlalu banyak/terlalu sedikit
+  - Ukuran sampel tidak memadai
+  - Model SEM (*common factor model*) bukan model yang cocok untuk menguji hipotesis hubungan antar-variabel (alternatifnya [*Principal Component Analysis* - PCA](https://medium.com/@aptrishu/understanding-principle-component-analysis-e32be0253ef0))
+  
+* Yang bisa dilakukan
+  - Tinjau kembali hipotesis modelnya
+  - Kurangi jumlah faktor laten dengan 'membuang' jalur/korelasi yang bermasalah
+  - Identifikasi variabel yang terlibat multikolinearitas. Masukkan salah satu saja dalam model, sisanya sisihkan
+
+---
+
+# Korelasi Bivariat: *Part* dan *partial correlation*
+
+&lt;center&gt;&lt;img src="libs/partial-cor.png" style="width:50%;" class="fancyimage"/&gt;&lt;/center&gt;&lt;br&gt;
+
+---
+
+# Metrik variabel (*standardised* vs *unstandardised*)
+
+* *Unstandarised solution/estimates*
+  - Dapat **dibandingkan** antar kelompok sampel
+  - Merupakan parameter yang digunakan oleh perangkat lunak untuk menghitung *standard error* dan *taraf signifikansi (p-value)*)
+  - Membandingkan *unstandardised factor loading* **harus melihat *standard error*nya juga** karena mereka seharusnya sepaket
+  
+* *Standarised solution/estimates*
+  - Hanya *interpretable* untuk kelompok sampel yang diuji - tidak bisa dibandingkan dengan kelompok sampel yang lain.
+  - Berguna untuk membandingkan *factor loading* antar-variabel di dalam model - peneliti dapat **mengidentifikasi variabel mana yang paling berkontribusi** menjelaskan *dependent variable*
+  - Apabila variabel dalam model memiliki unit pengukuran yang berbeda, maka *standardised estimates* akan sangat membantu untuk menstandardisasi unit antar-variabel tersebut
+  
+* Ada banyak perbedaan pendapat mengenai metrik mana yang harus dilaporkan, tetapi...
+  - **Selalu laporkan *unstandarised solution/estimates* dan *standard error*nya** (boleh juga dengan *standarised solution/estimates*, boleh juga tidak)
+
+---
+
+class: center, middle
+
+# Terima kasih banyak! 😉
+
+![](https://media.giphy.com/media/hrBSJ2So6iTo4/giphy.gif)
+
+Paparan disusun dengan menggunakan &lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 581 512"&gt;&lt;path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/&gt;&lt;/svg&gt; *package* [**xaringan**](https://github.com/yihui/xaringan) dengan *template* dan *fonts* dari `R-Ladies`.
+
+*Chakra* dibuat dengan [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), dan [R Markdown](https://rmarkdown.rstudio.com).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"ratio": "16:9",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

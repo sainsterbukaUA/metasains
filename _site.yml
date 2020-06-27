@@ -1,0 +1,39 @@
+name: "lvm-cfa"
+author: "Rizqy Amelia Zein"
+output_dir: "docs"
+exclude: ["*.xls","*.R","/slides","*.pptx","*.jpg","*.doc"]
+navbar:
+  title: "Latent Variable Modeling Workshop"
+  left:
+    - text: "oleh Rizqy Amelia Zein"
+      href: https://rameliaz.github.io/
+    - icon: fa-github fa-lg
+      href: https://github.com/rameliaz/mg-sem-workshop
+  right:
+  - text: "Salindia (HTML)"  
+    menu: 
+    - text: "Bagian 1"
+      href: slides/materi-lvm-1.html
+
+  - text: "Salindia (PDF)"  
+    menu: 
+    - text: "Bagian 1"
+      href: slides/materi-lvm-1.pdf
+
+  - text: "Dataset"  
+    menu: 
+    - text: "Dataset Contoh Korelasi"
+      href: corr.jasp
+  - text: "Survei"  
+    menu: 
+    - text: "Evaluasi Workshop"
+      href: https://www.soscisurvey.de/invited-talk-feedback/
+    
+output:
+  html_document:
+    toc: true
+    toc_float: yes
+    toc_depth: 3
+    df_print: paged
+    theme: flatly
+    highlight: tango

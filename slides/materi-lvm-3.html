@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Workshop LVM Bagian 3</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rizqy Amelia Zein" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies.css" rel="stylesheet" />
+    <link href="libs/remark-css/rladies-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: inverse, middle, title-slide, spaced
+
+
+
+class: title-slide, spaced
+
+&lt;img src="libs/unair.png" style="width:15%;" class="fancyimage"/&gt; &lt;img src="libs/STUA.png" style="width:23%;" class="fancyimage"/&gt; &lt;img src="libs/ina-logo.jpg" style="width:7%;" class="fancyimage"/&gt; &lt;img src="libs/igdore.png" style="width:23%;" class="fancyimage"/&gt;
+
+# Workshop Latent Variable Modeling (LVM)
+## Menggunakan `JASP`: Bagian 3 - Model Jalur (*Path Model*) dan Model Regresi
+&lt;br&gt;
+### &lt;b&gt;Rizqy Amelia Zein&lt;/b&gt;
+* Dosen, [Fakultas Psikologi, Universitas Airlangga](https://psikologi.unair.ac.id)
+* Anggota, [#SainsTerbuka Airlangga](https://sainsterbukaua.github.io/) &lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 512 512"&gt;&lt;path d="M256 48c114.953 0 208 93.029 208 208 0 114.953-93.029 208-208 208-114.953 0-208-93.029-208-208 0-114.953 93.029-208 208-208m0-40C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 56C149.961 64 64 149.961 64 256s85.961 192 192 192 192-85.961 192-192S362.039 64 256 64zm0 44c19.882 0 36 16.118 36 36s-16.118 36-36 36-36-16.118-36-36 16.118-36 36-36zm117.741 98.023c-28.712 6.779-55.511 12.748-82.14 15.807.851 101.023 12.306 123.052 25.037 155.621 3.617 9.26-.957 19.698-10.217 23.315-9.261 3.617-19.699-.957-23.316-10.217-8.705-22.308-17.086-40.636-22.261-78.549h-9.686c-5.167 37.851-13.534 56.208-22.262 78.549-3.615 9.255-14.05 13.836-23.315 10.217-9.26-3.617-13.834-14.056-10.217-23.315 12.713-32.541 24.185-54.541 25.037-155.621-26.629-3.058-53.428-9.027-82.141-15.807-8.6-2.031-13.926-10.648-11.895-19.249s10.647-13.926 19.249-11.895c96.686 22.829 124.283 22.783 220.775 0 8.599-2.03 17.218 3.294 19.249 11.895 2.029 8.601-3.297 17.219-11.897 19.249z"/&gt;&lt;/svg&gt;
+* Relawan, [INA-Rxiv](https://inarxiv.id) 
+* Researcher-in-training, [Institute for Globally Distributed Open Research and Education (IGDORE)](https://igdore.org/)
+
+---
+
+class: inverse
+
+# Analisis jalur
+
+* *Path model* merupakan kelanjutan dari model regresi karena terdiri dari **beberapa model regresi** sekaligus sehingga dapat digunakan untuk menguji *direct*, *indirect*, dan *correlated effects*.
+
+* *Path model* disusun secara visual dengan aturan tertentu (konsensus)
+  - Garis satu arah menggambarkan *direct effects*, yang merefleksikan *keterkaitan langsung* antara satu variabel dengan variabel lainnya. Asumsinya, **tidak ada variabel lain diluar model** yang berkorelasi dengan variabel tersebut.
+  - Garis dua arah menggambarkan *covariance*/korelasi, yang mengimplikasikan bahwa keterkaitan antar-variabel masih mungkin ditentukan oleh **variabel lain yang tidak ada di dalam model**.
+  - Garis *error terms* yang menunjukkan varians *observed variable* yang menjelaskan **variabel lain yang tidak dapat dijelaskan/di luar model**, yang juga mewakili **measurement error**.
+
+---
+
+# Korelasi = kausalitas?
+
+.pull-left[
+
+* Analisis jalur sebenarnya adalah **bentuk yang lebih kompleks** dari korelasi, dan **yang perlu diingat**:
+
+### **Correlation does not imply causation**
+
+Yang harus dipenuhi sebagai bukti kausalitas:
+* Ada **urutan waktu** (*temporal order*) &lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 512 512"&gt;&lt;path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/&gt;&lt;/svg&gt; maka desain penelitian *panel*/*longitudinal*/*time series* harus digunakan
+* Adanya **korelasi** (*covariance*) antara kedua variabel
+* Peneliti harus melakukan **kontrol** atas variabel lain yang mungkin menjelaskan korelasi tsb (melakukan manipulasi, mengestimasi *part* atau *partial correlation*)
+* Peneliti melakukan **manipulasi** pada variabel X, yang menyebabkan perubahan pada variabel Y
+
+]
+
+.pull-right[
+
+![](https://media.giphy.com/media/QWvcBw9qXs9wiVypPm/giphy.gif)
+
+]
+
+---
+
+# Diagram jalur 
+
+&lt;center&gt;&lt;img src="libs/path-diagram.png" style="width:40%;" class="fancyimage"/&gt;&lt;/center&gt;&lt;br&gt;
+
+---
+
+class: inverse, middle
+
+# Contoh
+
+.pull-left[
+
+Marimar adalah seorang wali murid di sebuah PAUD di Kota Surabaya. Pada suatu hari, ia mengamati seorang anak (dan orangtua) yang perilakunya menarik perhatiannya. 
+
+Ibu anak tersebut *ngotot* untuk menunggui anaknya di sekolah, padahal guru kelas meminta agar Ibu pulang saja, mempercayakan anak pada guru, dengan tujuan melatih kemandirian anaknya. 
+
+Melihat ibunya yang menggerutu karena diminta bu Guru pulang, si anak menangis meraung-raung tidak mau ditinggalkan. Akhirnya, terpaksa bu Guru membiarkan si Ibu menunggu di sekolah. 
+
+Marimar heran sekaligus penasaran, mengapa tiap anak **memberikan respon yang berbeda** ketika ditinggal orangtuanya di sekolah. Ada yang menangis meraung-raung, ada yang lebih santai dengan langsung bermain. Apakah ada kaitan antara kemandirian anak dengan karakteristik orangtuanya?
+
+]
+
+.pull-right[
+
+![](https://media.giphy.com/media/13xb3GPki9Kqdi/giphy.gif)
+
+]
+
+---
+
+# Variabel yang diukur Marimar
+
+* **trust** (variabel independen) = Kepercayaan ibu bahwa perkembangan anak dapat berlangsung secara natural ([**trust in organismic development**](https://link.springer.com/article/10.1007/s11031-008-9092-2)). Diukur dengan skala *likert* yang terdiri dari 5 aitem dengan 7 pilihan respon &lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 512 512"&gt;&lt;path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"/&gt;&lt;/svg&gt; dari **sangat tidak setuju** sampai **sangat setuju**.
+
+* **mandiri** (variabel dependen) = Tingkat kemandirian anak. Anak dengan skor yang tinggi semakin menunjukkan independensi dan lebih santai ketika ditinggal orangtuanya di sekolah. Marimar mengukurnya dengan melakukan observasi berdasarkan ada/tidaknya berbagai perilaku yang menunjukkan kemandirian. Diantaranya adalah:
+  - Menangis ketika ditinggal orangtuanya
+  - Merengek atau merajuk ketika ditinggal
+  - Masuk ke dalam kelas tanpa ditemani
+  - Menaruh tas dalam loker yang disediakan tanpa bantuan pengantar
+
+### Bagaimana bentuk diagram jalurnya?
+
+---
+
+class: center, middle
+
+&lt;center&gt;&lt;img src="libs/contoh-path.png" style="width:100%;" class="fancyimage"/&gt;&lt;/center&gt;&lt;br&gt;
+
+---
+
+# Nama variabel dan koefisien jalur
+
+| Nama Variabel/Koefisien | Huruf Yunani | Huruf Latin|
+| --------- | :------------: | :----------: |
+| *Error* pengukuran dari variabel X | δ | Delta |
+| *Error* pengukuran dari variabel Y | ε | Epsilon |
+| Variabel eksogen | ξ | Ksi |
+| Variabel endogen | η | Eta |
+| *Direct effect* antara variabel laten dan indikatornya (*loading factor*) | λ | Lambda |
+| *Direct effect* antara variabel endogen dan eksogen | γ | Gamma |
+| *Direct effect* antara dua variabel laten | β | Beta |
+| Korelasi (*covariance*) antara dua variabel laten | φ | Phi |
+| Varians *error* pengukuran dari sebuah variabel laten | ζ | Zeta |
+
+---
+
+## Contoh model dengan koefisien jalur
+
+&lt;center&gt;&lt;img src="libs/contoh-model.png" style="width:100%;" class="fancyimage"/&gt;&lt;/center&gt;&lt;br&gt;
+
+---
+
+## TUGAS 1: Membuat diagram jalur
+
+.pull-left[
+
+Fernando Jose sebal sekali karena ia kembali kehilangan pengokotnya dan ini kali ketiga ia kehilangan pengokot yang baru dibelinya seminggu yang lalu. 
+
+Teman-teman kerjanya memang punya kebiasaan buruk meminjam barang tanpa seijinnya. Ia akhirnya bertanya, apa ya yang menyebabkan teman-temannya berperilaku seperti itu? 
+
+Akhirnya ia menduga, mungkin ada kaitannya dengan faktor kepribadian (*conscientiousness*) rekan kerjanya dan usia karyawan.
+
+Ia menduga temannya yang lebih *conscientious* dan lebih tua akan lebih kecil kemungkinannya melakukan perilaku tidak beradab. Ia juga mengamati bahwa semakin tua usia rekan kerjanya, biasanya mereka lebih *conscientious*.
+
+]
+
+.pull-right[
+
+![](https://media.giphy.com/media/OLdblIEmgpTb2/giphy.gif)
+
+]
+
+---
+
+# Yang diukur...
+
+* **con** = Kecenderungan *conscientiousness* karyawan. Makin tinggi skornya, karyawan lebih mungkin menunjukkan kehati-hatian dan keteraturan dalam bekerja, efisien, dan bertanggung jawab. Diukur dengan skala *Likert* berisi 6 aitem dengan 10 pilihan jawaban.
+
+* **incivil** = Intensitas perilaku tidak beradab. Makin besar skornya, karyawan akan lebih mungkin *emotionally abusive*, suka mengambil barang teman tanpa ijin, dan perilaku tidak pantas yang lain. Diukur dengan skala *Likert* berisi 4 aitem dengan 10 pilihan jawaban.
+
+* **usia** = Usia partisipan
+
+### Buatlah diagram jalur beserta koefisien jalurnya. Bisa dengan `MS PowerPoint` atau *software* yang lain.
+
+[[Unggah file diagram jalur disini]](https://forms.gle/VpBzNxT26zXsBBAJ6)
+
+---
+
+# `lavaan` *Syntax*
+
+* `JASP` mengadopsi *syntax* dari *package* [`lavaan`](http://lavaan.ugent.be/tutorial/index.html), sehingga untuk menjalankan programnya, kita harus memasukkan serangkaian perintah.
+
+* Meskipun begitu, *syntax* `lavaan` sangat sederhana dan familiar dengan *syntax* `lavaan` memberikan banyak keuntungan.
+
+* Menjalankan perintah dengan *syntax* juga membantu peneliti untuk mereka-ulang hasil analisis datanya, serta mempermudah kolaborasi dengan peneliti yang terbiasa menggunakan perangkat lunak yang berbeda dengan kita.
+
+---
+
+# Dasar *syntax* `lavaan`&lt;sup&gt;*&lt;/sup&gt;
+
+&lt;center&gt;&lt;img src="libs/lavaan.png" style="width:55%;" class="fancyimage"/&gt;&lt;/center&gt;&lt;br&gt;
+
+.footnote[
+
+&lt;sup&gt;*&lt;/sup&gt; Baujean, A.A. (2014). Latent Variable Modeling Using R: A step-by-step guide. New York: Routledge.
+
+]
+
+---
+
+# Contoh CFA (1)
+
+&lt;center&gt;&lt;img src="libs/path-1.png" style="width:80%;" class="fancyimage"/&gt;&lt;/center&gt;&lt;br&gt;
+
+---
+
+class: middle
+
+
+```r
+# CFA
+trust =~ trust1 + trust2 + trust3 + trust4 + trust5
+
+# Measurement error (residual)
+trust1 ~~ trust1
+trust2 ~~ trust2
+trust3 ~~ trust3
+trust4 ~~ trust4
+trust5 ~~ trust5
+trust ~~ trust
+```
+
+---
+  
+# Contoh CFA (2)
+
+&lt;center&gt;&lt;img src="libs/path-2.png" style="width:80%;" class="fancyimage"/&gt;&lt;/center&gt;&lt;br&gt;
+
+---
+
+class: middle
+
+
+```r
+# CFA
+mandiri =~ mandiri1 + mandiri2 + mandiri3 + mandiri4
+
+# Measurement error (residual)
+mandiri1 ~~ mandiri1
+mandiri2 ~~ mandiri2
+mandiri3 ~~ trust3
+mandiri4 ~~ mandiri4
+mandiri ~~ mandiri
+```
+
+
+---
+
+# Contoh *path analysis* (3)
+
+&lt;center&gt;&lt;img src="libs/path-3.png" style="width:80%;" class="fancyimage"/&gt;&lt;/center&gt;&lt;br&gt;
+
+---
+
+class: middle
+
+
+```r
+# Model Struktural
+
+mandiri ~ trust
+
+# Measurement error (residual)
+
+mandiri ~~ mandiri
+trust ~~ trust
+```
+
+
+---
+
+# Contoh *full model* (4)
+
+&lt;center&gt;&lt;img src="libs/contoh-path.png" style="width:80%;" class="fancyimage"/&gt;&lt;/center&gt;&lt;br&gt;
+
+---
+
+class: middle
+
+
+```r
+# CFA
+mandiri =~ mandiri1 + mandiri2 + mandiri3 + mandiri4
+trust =~ trust1 + trust2 + trust3 + trust4 + trust5
+
+# Measurement error (residual)
+mandiri1 ~~ mandiri1
+mandiri2 ~~ mandiri2
+mandiri3 ~~ trust3
+mandiri4 ~~ mandiri4
+
+trust1 ~~ trust1
+trust2 ~~ trust2
+trust3 ~~ trust3
+trust4 ~~ trust4
+trust5 ~~ trust5
+
+trust ~~ trust
+mandiri ~~ mandiri
+
+# Model Struktural
+mandiri ~ trust
+```
+
+---
+
+# TUGAS 2: Menulis *syntax* `lavaan`
+
+### Tulislah *syntax* `lavaan` dari diagram jalur yang sudah dibuat di TUGAS 1
+
+#### [Klik disini untuk mengisi lembar kerja](https://forms.gle/ARMzU4trUgqRv8hj9)
+
+---
+
+class: center, middle
+
+# Terima kasih banyak! 😉
+
+![](https://media.giphy.com/media/hrBSJ2So6iTo4/giphy.gif)
+
+Paparan disusun dengan menggunakan &lt;svg style="height:0.8em;top:.04em;position:relative;" viewBox="0 0 581 512"&gt;&lt;path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/&gt;&lt;/svg&gt; *package* [**xaringan**](https://github.com/yihui/xaringan) dengan *template* dan *fonts* dari `R-Ladies`.
+
+*Chakra* dibuat dengan [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), dan [R Markdown](https://rmarkdown.rstudio.com).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"ratio": "16:9",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

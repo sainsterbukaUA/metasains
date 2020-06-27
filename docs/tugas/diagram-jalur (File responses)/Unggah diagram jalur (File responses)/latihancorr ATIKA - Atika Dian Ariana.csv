@@ -1,0 +1,16 @@
+Matriks korelasi,,,,,,,,
+,Neuroticism,Extraversion,Openness,Agreeableness,Conscientiousness,,,
+Neuroticism,1,,,,,,,
+Extraversion,-0.35,1,,,,,,
+Openness,-0.01,0.267,1,,,,,
+Agreeableness,-0.244,0.734,0.286,1,,,,
+Conscientiousness,-0.368,0.065,-0.013,0.077,1,,,
+,,,,,,,,
+,,,,,,,,
+Matriks korelasi (sudah dikoreksi atenuasi),,,,,,,,
+,Neuroticism,Extraversion,Openness,Agreeableness,Conscientiousness,,Diketahui reliabilitas,
+Neuroticism,1,,,,,,Neuroticism,0.78
+Extraversion,-0.590764631,1,,,,,Extraversion,0.45
+Openness,-0.013832966,0.486258945,1,,,,Openness,0.67
+Agreeableness,-0.473808739,1.876507673,0.599223964,1,,,Agreeableness,0.34
+Conscientiousness,-0.477962387,0.111147655,-0.018217935,0.151476224,1,,Conscientiousness,0.76

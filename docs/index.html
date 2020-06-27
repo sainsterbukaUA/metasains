@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>index.utf8</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Latent Variable Modeling Workshop</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://rameliaz.github.io/">oleh Rizqy Amelia Zein</a>
+</li>
+<li>
+  <a href="https://github.com/rameliaz/mg-sem-workshop">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Salindia (HTML)
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="slides/materi-lvm-1.html">Bagian 1</a>
+    </li>
+    <li>
+      <a href="slides/materi-lvm-2.html">Bagian 2</a>
+    </li>
+    <li>
+      <a href="slides/materi-lvm-3.html">Bagian 3</a>
+    </li>
+    <li>
+      <a href="slides/materi-lvm-4.html">Bagian 4</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Salindia (PDF)
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="slides/materi-lvm-1.pdf">Bagian 1</a>
+    </li>
+    <li>
+      <a href="slides/materi-lvm-2.pdf">Bagian 2</a>
+    </li>
+    <li>
+      <a href="slides/materi-lvm-3.pdf">Bagian 3</a>
+    </li>
+    <li>
+      <a href="slides/materi-lvm-4.pdf">Bagian 4</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Dataset
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="corr.jasp">Dataset Contoh Korelasi</a>
+    </li>
+    <li>
+      <a href="contoh-cfa.jasp">Dataset Contoh CFA (*.jasp)</a>
+    </li>
+    <li>
+      <a href="contoh-cfa.csv">Dataset Contoh CFA (*.csv)</a>
+    </li>
+    <li>
+      <a href="dataset-wave1.csv">Dataset Latihan CFA (*.csv)</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Survei
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://www.soscisurvey.de/invited-talk-feedback/">Evaluasi Workshop</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><br> </br></p>
+<div id="deskripsi" class="section level2">
+<h2>Deskripsi</h2>
+<p>Berikut adalah repositori yang digunakan untuk menyimpan semua materi untuk <strong>Workshop <em>Confirmatory Factor Analysis</em></strong> yang diselenggarakan oleh Fakultas Psikologi, Universitas Negeri Semarang. Materi <em>workshop</em> ini merupakan bagian (yang dimodifikasi) dari <em>workshop</em> <em>Multigroup Structural Equation modeling</em> yang diadakan oleh Fakultas Psikologi Universitas Airlangga. Untuk mengakses materi dan rekaman dari <em>workshop</em> <code>MG-SEM</code>, silahkan <a href="https://rameliaz.github.io/mg-sem-workshop/">klik tautan ini</a>.</p>
+<p>Materi berlisensi <a href="https://creativecommons.org/licenses/by/4.0/"><em>Creative Commons</em> BY 4.0</a>. <strong>Materi bebas digunakan kembali namun wajib mengatribusi sumber aslinya</strong>.</p>
+</div>
+<div id="waktu-dan-tempat" class="section level2">
+<h2>Waktu dan tempat</h2>
+<p><em>Workshop</em> diselenggarakan pada hari <strong>Kamis, 30 Januari 2020</strong>, pukul 07.30-16.00 WIB di Gedung A1 Ruang 204 Fakultas Ilmu Pendidikan, Universitas Negeri Semarang.</p>
+</div>
+<div id="outline-materi" class="section level2">
+<h2><em>Outline</em> materi</h2>
+<p>Berikut adalah <em>outline</em> materi <em>workshop</em>:</p>
+<div id="pengantar" class="section level5">
+<h5><strong>Pengantar</strong></h5>
+<ul>
+<li>Apa itu <em>latent variable modeling</em> (LVM)?</li>
+<li>Mengapa dan pada kondisi seperti apa LVM diperlukan?</li>
+<li>Beberapa pilihan perangkat lunak untuk mengeksekusi LVM</li>
+<li>Yang tidak dicakup dalam <em>workshop</em> serta keterbatasan JASP</li>
+</ul>
+</div>
+<div id="korelasi" class="section level5">
+<h5><strong>Korelasi</strong></h5>
+<ul>
+<li>Jenis-jenis koefisien korelasi</li>
+<li>Faktor-faktor yang membuat koefisien korelasi bervariasi</li>
+<li><a href="https://methods.sagepub.com/reference/encyc-of-research-design/n81.xml">Koreksi atenuasi</a> dan <em>measurement error</em></li>
+<li><em>Variance-covariance</em> dan <em>correlation matrix</em></li>
+<li><em>WARNING! Covariance/correlation matrix is not positive definite</em></li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/0049124112442138"><em>Heywood</em> dan <em>ultra-Heywood case</em></a></li>
+<li>Bivariat, <em>part</em>, dan <em>partial correlation</em></li>
+<li>Metrik variabel (<em>standardised</em> vs <em>unstandardised</em>)</li>
+</ul>
+</div>
+<div id="model-jalur-path-model-dan-model-regresi" class="section level5">
+<h5><strong>Model Jalur</strong> (<em>Path Model</em>) dan Model Regresi</h5>
+<ul>
+<li>Definisi <em>path model</em></li>
+<li>Nama variabel dan koefisien jalur (<em>path coefficients</em>)
+<ul>
+<li>δ (delta), ε (epsilon), ξ (ksi), η (eta), λ (lambda), γ (gamma), β (beta), φ (phi), ζ (zeta)</li>
+</ul></li>
+<li>Representasi visual model jalur menggunakan diagram jalur (<em>path diagram</em>)</li>
+<li>Menggambarkan hubungan antar-variabel dengan menggunakan diagram jalur</li>
+<li><em>Syntax</em> <code>lavaan</code> untuk spesifikasi model jalur</li>
+<li>Asumsi kausalitas (?) dan limitasi</li>
+</ul>
+</div>
+<div id="confirmatory-factor-analysis-cfa" class="section level5">
+<h5><strong>Confirmatory Factor Analysis (CFA)</strong></h5>
+<ul>
+<li>Definisi <em>factor analysis</em></li>
+<li><em>Exploratory</em> vs <em>confirmatory factor analysis</em></li>
+<li>Kapan menggunakan CFA?</li>
+<li><a href="https://psycnet.apa.org/record/2008-06808-005"><em>Constraining parameter</em> model</a></li>
+<li>Model pengukuran (paralel, <em>tau equivalence</em>, dan <em>congeneric</em>)</li>
+<li>Variabel indikator (reflektif vs formatif)</li>
+<li><em>Correlated error variances</em></li>
+<li>Metode estimasi</li>
+<li>Jenis-jenis kriteria untuk menilai ketepatan model (<em>model fit</em>)
+<ul>
+<li><a href="http://www.ejbrm.com/issue/download.html?idArticle=183"><em>Model fit</em></a></li>
+<li><em>Model comparison</em>/<em>Incremental fit indices</em></li>
+<li><em>Model parsimony</em></li>
+<li><em>Parameter fit</em></li>
+</ul></li>
+<li>Menuliskan hasil analisis CFA dalam laporan penelitian</li>
+</ul>
+</div>
+</div>
+<div id="referensi" class="section level2">
+<h2>Referensi</h2>
+<ul>
+<li>Baujean, A.A. (2014). <em>Latent Variable Modeling Using R: A step-by-step guide</em>. New York: Routledge.</li>
+<li>Schumacker, R.E. &amp; Lomax, R.G. (2016). <em>A Beginner’s Guide to Structural Equation Modeling (4th edition)</em>. New York: Routledge.</li>
+<li>Van De Schoot, R., Schmidt, P., De Beuckelaer, A., Lek, K., &amp; Zondervan-Zwijnenburg, M. (2015). <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2015.01064/full">Measurement invariance</a>. Frontiers in psychology, 6, 1064.</li>
+<li>Putnick, D. L., &amp; Bornstein, M. H. (2016). <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5145197/">Measurement invariance conventions and reporting: The state of the art and future directions for psychological research</a>. Developmental review, 41, 71-90.</li>
+<li>Cho, E. (2016). <a href="https://rameliaz.github.io/mg-sem-workshop/cho2016.pdf">Making Reliability Reliable: A Systematic approach to reliability coefficients</a>. Organizational Research Methods, 19(4), 651-682.</li>
+</ul>
+</div>
+<div id="contoh-penelitian-dengan-cfa" class="section level2">
+<h2>Contoh penelitian dengan <code>CFA</code></h2>
+<ul>
+<li>Rodriguez, V. J., Radusky, P. D., Kumar, M., Nemeroff, C. B., &amp; Jones, D. (2018). <a href="https://www.sciencedirect.com/science/article/abs/pii/S2468171718300085">Measurement invariance of the Childhood Trauma Questionnaire by gender, poverty level, and HIV status</a>. Personalized Medicine in Psychiatry, 11, 16-22.</li>
+<li>Liu, Y., Millsap, R. E., West, S. G., Tein, J. Y., Tanaka, R., &amp; Grimm, K. J. (2017). <a href="https://psycnet.apa.org/record/2016-25480-001">Testing measurement invariance in longitudinal data with ordered-categorical measures</a>. Psychological methods, 22(3), 486.</li>
+<li>Bowden, S. C., Saklofske, D. H., Van de Vijver, F. J. R., Sudarshan, N. J., &amp; Eysenck, S. B. G. (2016). <a href="https://www.sciencedirect.com/science/article/abs/pii/S0191886916302835">Cross-cultural measurement invariance of the Eysenck Personality Questionnaire across 33 countries</a>. Personality and Individual Differences, 103, 53-60.</li>
+<li>Bieda, A., Hirschfeld, G., Schönfeld, P., Brailovskaia, J., Zhang, X. C., &amp; Margraf, J. (2017). <a href="http://www.kli.psy.ruhr-uni-bochum.de/klipsy/public/margraf%20Journals%20with%20Peer-Review/Bieda%20et%20al%202016%20Universal%20happiness.pdf">Universal happiness? Cross-cultural measurement invariance of scales assessing positive mental health</a>. Psychological assessment, 29(4), 408.</li>
+</ul>
+</div>
+<div id="sumber-belajar-lainnya" class="section level2">
+<h2>Sumber belajar lainnya</h2>
+<ul>
+<li><a href="https://learnstatswithjasp.com/">Learning Statistics with JASP</a></li>
+<li><a href="https://osf.io/t56kg/">Undergraduate Statistics with JASP</a></li>
+<li><a href="http://sachaepskamp.com/SEM2019">Materi workshop SEM: Sacha Epskamp</a></li>
+</ul>
+</div>
+<div id="sebelum-mulai-workshop" class="section level2">
+<h2>Sebelum mulai workshop</h2>
+<ul>
+<li>Sebaiknya semua peserta sudah memasang <a href="https://jasp-stats.org/download/">JASP versi 0.11.1</a> pada perangkatnya masing-masing, untuk menghindari terlalu banyaknya waktu untuk menyelesaikan <em>troubleshooting</em> instalasi ketika <em>workshop</em>.</li>
+<li>Peserta sangat disarankan untuk menonton video tutorial JASP di bawah ini sebelum <em>workshop</em> untuk belajar menavigasikan menu dan fitur yang ada dalam JASP (total durasi kurang lebih hanya 5 menit).</li>
+</ul>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HxqB7CUA-XI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</center>
+</div>
+<div id="video-rekaman" class="section level2">
+<h2>Video rekaman</h2>
+<div id="sesi-1-09.00-12.00" class="section level4">
+<h4>Sesi 1 (09.00-12.00)</h4>
+<p><a href="">Klik untuk melihat video</a></p>
+</div>
+<div id="sesi-2-13.00-16.00" class="section level4">
+<h4>Sesi 2 (13.00-16.00)</h4>
+<p><a href="">Klik untuk melihat video</a></p>
+</div>
+</div>
+<div id="pembaruan-dan-koreksi" class="section level2">
+<h2>Pembaruan dan koreksi</h2>
+</div>
+<div id="poster-kegiatan" class="section level2">
+<h2>Poster kegiatan</h2>
+<center>
+<img src="slides/libs/poster.jpg" style="width:70%;" class="fancyimage"/>
+</center>
+<p><br></p>
+</div>
+<div id="jawaban-latihan" class="section level2">
+<h2>Jawaban Latihan</h2>
+<div id="latihan-mandiri-1" class="section level3">
+<h3>Latihan Mandiri (1):</h3>
+<p><a href="">Klik disini untuk melihat jawaban</a> saya atas latihan mandiri (1).</p>
+</div>
+<div id="latihan-mandiri-2" class="section level3">
+<h3>Latihan Mandiri (2):</h3>
+<p><a href="">Klik disini untuk melihat jawaban</a> saya atas latihan mandiri (2).</p>
+</div>
+<div id="latihan-mandiri-3" class="section level3">
+<h3>Latihan Mandiri (3):</h3>
+<p><a href="">Klik disini untuk melihat jawaban</a> saya atas latihan mandiri (3).</p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
