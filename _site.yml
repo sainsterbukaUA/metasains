@@ -11,12 +11,14 @@ navbar:
       href: https://github.com/sainsterbukaUA/meta-analysis
   right:
   - text: "Materi Kursus"  
+    menu: 
+    - text: "Bagian 1"
       href: slides/materi-lvm-1.html
   - text: "Survei"  
     menu: 
     - text: "Evaluasi Kursus"
       href: https://www.soscisurvey.de/invited-talk-feedback/
-    
+      
 output:
   html_document:
     toc: true

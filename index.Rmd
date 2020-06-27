@@ -8,7 +8,8 @@ Sejak [krisis reka-ulang (*reproducibility*)](http://www.nature.com/news/1-500-s
 
 Kursus ini sengaja kami desain agar Metasains lebih aksesibel bagi peneliti Indonesia. Kursus ini mungkin tidak akan mencakup semua aspek dari Metasains, karena kami lebih banyak berfokus membahas sintesis bukti (*evidence synthesis*). Tetapi kami berharap materi dari kursus mandiri ini dapat memberikan wawasan dan perspektif baru mengenai hal-hal penting dalam proses penelitian.
 
-
+<br>
+</br>
 
 ## Persiapan Kursus
 Sebelum mengikuti kursus, ada beberapa hal yang perlu anda siapkan.
@@ -17,10 +18,14 @@ Sebelum mengikuti kursus, ada beberapa hal yang perlu anda siapkan.
 * Setelah anda berhasil memasang jamovi, anda harus menambahkan *module* Meta-Analysis for jamovi (MAJOR) untuk melakukan meta-analisis. Untuk memasang *module* tersebut, anda dapat menyimak video tutorial di bawah ini.
 * 
 
+<br>
+</br>
 
 ## Lisensi Kursus
 Materi berlisensi [*Creative Commons* BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/). Siapapun bebas mereproduksi, melakukan re-distribusi, atau bahkan memodifikasi konten kursus ini. Namun, konten yang digunakan kembali **tidak boleh digunakan untuk kepentingan komersial** dan wajib mengatribusi sumber aslinya. **Singkatnya, materi bebas digunakan kembali, namun anda wajib mengatribusi sumber aslinya dan dilarang menggunakannya untuk kepentingan komersial**.
 
+<br>
+</br>
 
 ## Apakah Kursus ini Berbayar?
 Kursus ini **sepenuhnya gratis**. Namun apabila anda merasa materi dalam kursus ini membantu anda, kami mengharapkan agar anda menjadi patron atau memberikan donasi kepada Sains Terbuka Airlangga. Tujuannya, agar kami dapat membuat lebih banyak konten gratis yang bisa dimanfaatkan oleh khalayak luas.
