@@ -1,14 +1,19 @@
 <br>
 </br>
 
-## Deskripsi
-Berikut adalah repositori yang digunakan untuk menyimpan semua materi untuk **Workshop *Confirmatory Factor Analysis*** yang diselenggarakan oleh Fakultas Psikologi, Universitas Negeri Semarang. Materi *workshop* ini merupakan bagian (yang dimodifikasi) dari *workshop* *Multigroup Structural Equation modeling* yang diadakan oleh Fakultas Psikologi Universitas Airlangga. Untuk mengakses materi dan rekaman dari *workshop* `MG-SEM`, silahkan [klik tautan ini](https://rameliaz.github.io/mg-sem-workshop/).
+## Deskripsi Kursus
+Sejak [krisis reka-ulang (*reproducibility*)](http://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970) menerpa banyak disiplin ilmu, para ilmuwan terdesak untuk melakukan koreksi diri (*self-correction*) atas inovasi-inovasi yang mereka lakukan. Sejatinya, sains tak cukup hanya dengan melahirkan inovasi, namun koreksi diri juga perlu dilakukan agar para ilmuwan mendapatkan wawasan mengenai pekerjaan yang sudah mereka lakukan ([Munafò, et al., 2010](http://www.nature.com/articles/s41562-016-0021)). Metasains, atau disiplin ilmu yang menyelidiki proses penelitian, memainkan peran pentingnya dalam proses ini. Metasains amat bermanfaat untuk memberikan informasi pada peneliti **apa-apa yang salah** dalam pekerjaan mereka, sekaligus memfasilitas swarefleksi.
 
-Materi berlisensi [*Creative Commons* BY 4.0](https://creativecommons.org/licenses/by/4.0/). **Materi bebas digunakan kembali namun wajib mengatribusi sumber aslinya**.
+Metasains merupakan disiplin ilmu yang mulai populer sejak beberapa dekade terakhir
+
+## Lisensi Kursus
+Materi berlisensi [*Creative Commons* BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/). Siapapun bebas mereproduksi, melakukan re-distribusi, atau bahkan memodifikasi konten kursus ini. Namun, konten yang digunakan kembali **tidak boleh digunakan untuk kepentingan komersial** dan wajib mengatribusi sumber aslinya. **Singkatnya, materi bebas digunakan kembali, namun anda wajib mengatribusi sumber aslinya dan dilarang menggunakannya untuk kepentingan komersial**.
 
 
-## Waktu dan tempat
-*Workshop* diselenggarakan pada hari **Kamis, 30 Januari 2020**, pukul 07.30-16.00 WIB di Gedung A1 Ruang 204 Fakultas Ilmu Pendidikan, Universitas Negeri Semarang.
+## Apakah Kursus ini Berbayar?
+Kursus ini **sepenuhnya gratis**, namun apabila anda merasa materi dalam kursus ini membantu anda, kami mengharapkan agar anda menjadi patron atau memberikan donasi kepada Sains Terbuka Airlangga. Tujuannya, agar kami dapat membuat lebih banyak konten gratis yang bisa dimanfaatkan oleh khalayak luas.
+
+Silakan klik laman ini untuk mengetahui lebih lanjut bagaimana cara menjadi patron atau memberikan donasi kepada Sains Terbuka Airlangga.
 
 
 ## *Outline* materi
@@ -101,27 +106,3 @@ Berikut adalah *outline* materi *workshop*:
 [Klik untuk melihat video]()
 
 ## Pembaruan dan koreksi
-
-
-## Poster kegiatan
-
-<center><img src="slides/libs/poster.jpg" style="width:70%;" class="fancyimage"/></center><br>
-
-
-## Jawaban Latihan
-
-
-### Latihan Mandiri (1): 
-
-[Klik disini untuk melihat jawaban]() saya atas latihan mandiri (1).
-
-
-### Latihan Mandiri (2):
-
-[Klik disini untuk melihat jawaban]() saya atas latihan mandiri (2).
-
-
-### Latihan Mandiri (3):
-
-[Klik disini untuk melihat jawaban]() saya atas latihan mandiri (3).
-
