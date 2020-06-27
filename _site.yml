@@ -1,9 +1,9 @@
-name: "lvm-cfa"
+name: "meta-analysis"
 author: "Rizqy Amelia Zein"
 output_dir: "docs"
 exclude: ["*.xls","*.R","/slides","*.pptx","*.jpg","*.doc"]
 navbar:
-  title: "Kursus Mandiri Metasains: Meta-Analisis"
+  title: "Kursus Mandiri Metasains"
   left:
     - text: "oleh Rizqy Amelia Zein"
       href: https://rameliaz.github.io/
@@ -14,12 +14,10 @@ navbar:
     menu: 
     - text: "Bagian 1"
       href: slides/materi-lvm-1.html
-
   - text: "Salindia (PDF)"  
     menu: 
     - text: "Bagian 1"
       href: slides/materi-lvm-1.pdf
-
   - text: "Dataset"  
     menu: 
     - text: "Dataset Contoh Korelasi"
