@@ -14,14 +14,44 @@ Dalam materi ini, pemandu akan menguraikan krisis coba-ulang (replikasi) dan rev
 <br>
 </br>
 
+## Salindia Materi
+* Salindia HTML
+* Salindia PDF
+
+<br>
+</br>
+
 ## Daftar Bacaan
+* Fanelli, D. (2018). [Opinion: Is science really facing a reproducibility crisis, and do we need it to?](https://www.pnas.org/content/115/11/2628.short). Proceedings of the National Academy of Sciences, 115(11), 2628-2631.
+* LeBel, E. P., McCarthy, R. J., Earp, B. D., Elson, M., & Vanpaemel, W. (2018). [A unified framework to quantify the credibility of scientific findings](https://journals.sagepub.com/doi/abs/10.1177/2515245918787489). Advances in Methods and Practices in Psychological Science, 1(3), 389-402.
+* Ioannidis, J. P. (2005). [Why most published research findings are false](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124&xid=17259,15700019,15700186,15700190,15700248). PLoS Medicine, 2(8), e124.
+* Cohen, J. (1990). [Things I have learned (so far)](https://psycnet.apa.org/record/1992-97624-028). American Psychologist, 45(12), 1304.
+* Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). [False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant](https://journals.sagepub.com/doi/abs/10.1177/0956797611417632). Psychological Science, 22(11), 1359-1366.
+* Goodman, S. N., Fanelli, D., & Ioannidis, J. P. (2016). [What does research reproducibility mean?](https://stm.sciencemag.org/content/8/341/341ps12). Science Translational Medicine, 8(341), 341ps12-341ps12.
+
+
+### Krisis Reka-Ulang (*Reproducibility*) di Berbagai Disiplin Ilmu
+* **Ekonomi**: Camerer, C. F., Dreber, A., Forsell, E., Ho, T. H., Huber, J., Johannesson, M., ... & Heikensten, E. (2016). [Evaluating replicability of laboratory experiments in economics](https://science.sciencemag.org/content/351/6280/1433.abstract). Science, 351(6280), 1433-1436.
+* **Ilmu Politik**: Lupia, A., & Elman, C. (2014). [Openness in political science: Data access and research transparency](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/openness-in-political-science-data-access-and-research-transparency/0B189FC1097A4D062E57F805E8F07BD0). PS, Political Science & Politics, 47(1), 19.
+* **Neurosains dan Biomedis**: Bzdok, D., & Ioannidis, J. P. (2019). [Exploration, inference, and prediction in neuroscience and biomedicine](https://www.sciencedirect.com/science/article/pii/S0166223619300074?casa_token=oyqSjheFpzYAAAAA:J1uvdFYktmIveiH5BfKs_aywtBfoZXxLKnJyEib3OhyUzNN76ImNFjqwdAmSzY4LDTeQeXuWVEs). Trends in neurosciences, 42(4), 251-262.
+* **Farmakologi**: Prinz, F., Schlange, T., & Asadullah, K. (2011). [Believe it or not: how much can we rely on published data on potential drug targets?](https://www.nature.com/articles/nrd3439-c1). Nature Reviews Drug discovery, 10(9), 712-712.
+* **Hidrologi**: Stagge, J. H., Rosenberg, D. E., Abdallah, A. M., Akbar, H., Attallah, N. A., & James, R. (2019). [Assessing data availability and research reproducibility in hydrology and water resources](https://www.nature.com/articles/sdata201930). Scientific Data, 6, 190030.
+* **Ekologi**: Fraser, H., Parker, T., Nakagawa, S., Barnett, A., & Fidler, F. (2018). [Questionable research practices in ecology and evolution](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0200303). PloS One, 13(7), e0200303.
+* **Fisika**: Stein, M. M., Smith, E. M., & Holmes, N. G. (2018). [Confirming what we know: Understanding questionable research practices in intro physics labs](https://arxiv.org/abs/1807.04716). arXiv preprint arXiv:1807.04716.
+* **Kimia**: Cooper, M. M. (2018). [The Replication Crisis and Chemistry Education Research](https://pubs.acs.org/doi/abs/10.1021/acs.jchemed.7b00907). Journal of Chemistry Education. 2018, 95, 1, 1–2.
+* **Manajemen**: Banks, G. C., O’Boyle Jr, E. H., Pollack, J. M., White, C. D., Batchelor, J. H., Whelpley, C. E., ... & Adkins, C. L. (2016). [Questions about questionable research practices in the field of management: A guest commentary](https://journals.sagepub.com/doi/full/10.1177/0149206315619011). Journal of Management, 42, 1, 5-20.
+
+### Materi Lainnya yang Menarik
+* [Reproducibility of Scientific Results (Stanford Encyclopedia of Philosophy)](https://plato.stanford.edu/entries/scientific-reproducibility/#pagetopright)
+* [Open Science Knowledge Base](https://how-to-open.science/)
+
 
 <br>
 </br>
 
 ## Ingin Bertanya pada Pemandu?
 
-Peserta dimungkinkan untuk mengajukan pertanyaan kepada pemandu kursus dengan mengisi *spreadsheet* yang khusus disediakan untuk menampung pertanyaan. *Spreadsheet* diatur dengan **akses publik** sehingga anda dapat menambahkan pertanyaan anda secara mandiri. Anda dapat **bertanya secara anonim** dan dimungkinkan untuk **belajar dari pertanyaan dari peserta lain**. 
+Peserta dimungkinkan untuk mengajukan pertanyaan kepada pemandu kursus dengan mengisi *spreadsheet* yang khusus disediakan untuk menampung pertanyaan. *Spreadsheet* diatur dengan **akses publik** sehingga anda dapat menambahkan pertanyaan anda secara mandiri. Anda dapat **bertanya secara anonim** dan dimungkinkan untuk **belajar dari pertanyaan dari peserta lain**. Anda juga **diperbolehkan untuk ikut menjawab** pertanyaan peserta lainnya di kolom yang sudah disediakan.
 
 [Silakan klik di sini untuk mengakses *spreadsheet* pertanyaan.](https://docs.google.com/spreadsheets/d/1SC0IfyThNHkMgFR-LE8kQDyc7f0tfnUyDeV7gwBz4dg/edit?usp=sharing)
 

@@ -16,7 +16,7 @@ Sebelum mengikuti kursus, ada beberapa hal yang perlu anda siapkan.
 [**Klik di sini untuk melihat video**](https://youtu.be/JgD7N9u8cOc)
 
 ## Lisensi Kursus
-Materi berlisensi [*Creative Commons* BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/). Siapapun bebas mereproduksi, melakukan re-distribusi, atau bahkan memodifikasi konten kursus ini. Namun, konten yang digunakan kembali **tidak boleh digunakan untuk kepentingan komersial** dan wajib mengatribusi sumber aslinya. **Singkatnya, materi bebas digunakan kembali, namun anda wajib mengatribusi sumber aslinya dan dilarang menggunakannya untuk kepentingan komersial**.
+Materi berlisensi [*Creative Commons* BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). Siapapun bebas mereproduksi, melakukan re-distribusi, atau bahkan memodifikasi konten kursus ini. Namun, konten yang digunakan kembali **tidak boleh digunakan untuk kepentingan komersial** dan wajib mengatribusi sumber aslinya. **Singkatnya, materi bebas digunakan kembali, namun anda wajib mengatribusi sumber aslinya dan dilarang menggunakannya untuk kepentingan komersial**.
 
 ## Apakah Kursus ini Berbayar?
 Kursus ini **sepenuhnya gratis**. Namun apabila anda merasa materi dalam kursus ini membantu anda, kami mengharapkan agar anda menjadi patron atau memberikan donasi kepada Sains Terbuka Airlangga. Tujuannya, agar kami dapat membuat lebih banyak konten gratis yang bisa dimanfaatkan oleh khalayak luas.
@@ -27,7 +27,7 @@ Silakan [klik tautan ini](https://sainsterbukaua.github.io/donation/) untuk meng
 
 Kursus ini terdiri dari **10 bagian**. Di setiap bagian, kami akan menyediakan **video materi dari pemandu kursus** (dengan durasi antara 20-30 menit), **salindia materi**, **referensi yang harus dibaca**, dan **tugas mandiri yang dapat dikerjakan** oleh peserta. 
 
-Peserta dimungkinkan untuk mengajukan pertanyaan kepada pemandu kursus dengan mengisi *spreadsheet* yang khusus disediakan untuk menampung pertanyaan. *Spreadsheet* diatur dengan **akses publik** sehingga anda dapat menambahkan pertanyaan anda secara mandiri. Anda dapat **bertanya secara anonim** dan dimungkinkan untuk **belajar dari pertanyaan dari peserta lain**. 
+Peserta dimungkinkan untuk mengajukan pertanyaan kepada pemandu kursus dengan mengisi *spreadsheet* yang khusus disediakan untuk menampung pertanyaan. *Spreadsheet* diatur dengan **akses publik** sehingga anda dapat menambahkan pertanyaan anda secara mandiri. Anda dapat **bertanya secara anonim** dan dimungkinkan untuk **belajar dari pertanyaan dari peserta lain**. Anda juga **diperbolehkan untuk ikut menjawab** pertanyaan peserta lainnya di kolom yang sudah disediakan.
 
 [Silakan klik di sini untuk mengakses *spreadsheet* pertanyaan.](https://docs.google.com/spreadsheets/d/1SC0IfyThNHkMgFR-LE8kQDyc7f0tfnUyDeV7gwBz4dg/edit?usp=sharing)
 
@@ -62,7 +62,7 @@ Meta-analisis umumnya hanya mencakup studi-studi yang dipublikasikan atau dapat 
 ##### **Bagian 9: Melaporkan Hasil Meta-Analisis**
 Pada bagian ini, pemandu akan menguraikan bagaimana cara melaporkan hasil meta-analisis, termasuk apa saja yang harus dilaporkan dalam artikel. Pemandu akan menggunakan [PRISMA *Statement*](http://dx.plos.org/10.1371/journal.pmed.1000097).
 
-##### **Bagian 10: *Caveat* - Limitasi Meta-Analisis**
+##### **Bagian 10: *Caveat* - Keterbatasan Meta-Analisis**
 Dalam bagian ini, pemandu akan menyampaikan limitasi studi meta-analisis dan bagaimana mencegah bias yang mungkin muncul sebelum studi dimulai. Pemandu juga akan menyampaikan bagaimana praktik Sains Terbuka dapat dilakukan untuk meningkatkan kredibilitas temuan dalam penelitian meta-analisis.
 
 ## Pemandu
