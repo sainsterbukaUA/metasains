@@ -12,8 +12,8 @@ navbar:
   right:
   - text: "Materi Kursus"  
     menu: 
-    - text: "Bagian 1"
-      href: slides/materi-lvm-1.html
+    - text: "Selamat Datang!"
+      href: selamat-datang.html
   - text: "Survei"  
     menu: 
     - text: "Evaluasi Kursus"

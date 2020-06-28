@@ -19,7 +19,7 @@ Sebelum mengikuti kursus, ada beberapa hal yang perlu anda siapkan.
 * Perangkat lunak yang akan digunakan untuk melakukan meta-analisis adalah [jamovi](https://www.jamovi.org/). Sebelum mulai kursus, silakan pasang jamovi di perangkat anda masing-masing. Gunakan [versi 1.2.22 (*current*)](https://www.jamovi.org/download.html) dan jamovi dapat digunakan, baik pada perangkat dengan sistem operasi Windows maupun iOS. Anda juga dapat berlatih secara mandiri agar lebih familiar dengan fitur dan menu jamovi dengan mengikuti [tutorial dari Datalab](https://www.jamovi.org/). Baik jamovi maupun tutorial yang disediakan Datalab dapat diakses terbuka tanpa biaya langganan apapun.
 * Setelah anda berhasil memasang jamovi, anda harus menambahkan *module* Meta-Analysis for jamovi (MAJOR) untuk melakukan meta-analisis. Untuk memasang *module* tersebut, anda dapat menyimak video tutorial di bawah ini.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JgD7N9u8cOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/JgD7N9u8cOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 
 <br>
 </br>
@@ -44,9 +44,11 @@ Kursus ini terdiri dari **10 bagian**. Di setiap bagian, kami akan menyediakan *
 
 Peserta dimungkinkan untuk mengajukan pertanyaan kepada pemandu kursus dengan mengisi *spreadsheet* yang khusus disediakan untuk menampung pertanyaan. *Spreadsheet* diatur dengan **akses publik** sehingga anda dapat menambahkan pertanyaan anda secara mandiri. Anda dapat **bertanya secara anonim** dan dimungkinkan untuk **belajar dari pertanyaan dari peserta lain**. 
 
-!!**MOHON DIINGAT**!! anda tidak diperkenankan untuk mengubah pertanyaan yang sudah diajukan oleh peserta lain, ataupun memodifikasi jawaban yang sudah diberikan oleh pemandu.
+[Silakan klik di sini untuk mengakses *spreadsheet* pertanyaan.](https://docs.google.com/spreadsheets/d/1SC0IfyThNHkMgFR-LE8kQDyc7f0tfnUyDeV7gwBz4dg/edit?usp=sharing)
 
-Berikut adalah gambaran singkat materi kursus:
+**!!MOHON DIINGAT!!** anda tidak diperkenankan untuk mengubah pertanyaan yang sudah diajukan oleh peserta lain, ataupun memodifikasi jawaban yang sudah diberikan oleh pemandu.
+
+**Berikut adalah gambaran singkat materi kursus:**
 
 ##### **Bagian 1: Krisis Replikasi, Revolusi Kredibilitas, dan Pengantar Metasains**
 Dalam materi ini, pemandu akan menguraikan krisis coba-ulang (replikasi) dan revolusi kredibilitas yang terjadi di beberapa disiplin ilmu, khususnya Psikologi. Pemandu akan menguraikan akar persoalan krisis replikasi, definisi coba-ulang (replikasi) dan reka-ulang (*reproducibility*), dan mengapa persoalan ini menjadi ancaman bagi kredibilitas sains, lembaga otoritas sains, dan ilmuwan. Dalam materi ini, pemandu juga akan menguraikan peranan Metasains dalam revolusi kredibilitas.
@@ -70,16 +72,16 @@ Dalam bagian ini, pemandu akan menjelaskan perbedaan *random*, *fixed* dan *mixe
 Di bagian ini, pemandu akan menguraikan strategi-strategi yang digunakan untuk mendeteksi derajat heterogenitas studi-studi yang digunakan sebagai sampel dalam meta-analisis. Peserta juga diajak untuk mengenali teknik *meta-regression* yang dapat dilakukan untuk mendeteksi variabel moderator yang menyebabkan heterogenitas pada sampel.
 
 ##### **Bagian 8: Mendeteksi dan Mengkoreksi Bias Publikasi**
-Meta-analisis umumnya hanya mencakup studi-studi yang dipublikasikan atau dapat diakses terbuka. Namun, bagaimana dengan penelitian yang tidak dipublikasikan, apalagi yang hasilnya negatif (*null findings*)? Padahal studi dengan hasil negatif lebih sulit dipublikasikan daripada studi dengan hasil positif. Hal ini menimbulkan kondisi yang juga disebut sebagai **bias publikasi**. Dampaknya, meta-analisis memberikan informasi yang parsial akibat tidak tersedianya semuanya informasi yang dibutuhkan untuk membuat kesimpulan. Di bagian ini, pemandu akan menerangkan teknik-teknik yang dapat digunakan untuk mendeteksi dan mengkoreksi bias publikasi (*funnel plot* ([*inverted*](https://journals.sagepub.com/doi/pdf/10.1177/1536867X0400400204) dan [*contour-enhanced*](https://linkinghub.elsevier.com/retrieve/pii/S0895435607004350)), [*fail-safe N*](bmj.com/content/312/7023/125.1.abstract), [*trim-and-fill*](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.0006-341X.2000.00455.x), *Egger's test*, [*p-curve*](https://doi.org/10.1177/1745691614553988), dan [*equivalence test*](https://journals.sagepub.com/doi/full/10.1177/2515245918770963)).
+Meta-analisis umumnya hanya mencakup studi-studi yang dipublikasikan atau dapat diakses terbuka. Namun, bagaimana dengan penelitian yang tidak dipublikasikan, apalagi yang hasilnya negatif (*null findings*)? Padahal studi dengan hasil negatif lebih sulit dipublikasikan daripada studi dengan hasil positif. Hal ini menimbulkan kondisi yang juga disebut sebagai **bias publikasi**. Dampaknya, meta-analisis memberikan informasi yang parsial akibat tidak tersedianya semuanya informasi yang dibutuhkan untuk membuat kesimpulan. Di bagian ini, pemandu akan menerangkan teknik-teknik yang dapat digunakan untuk mendeteksi dan mengkoreksi bias publikasi (*funnel plot* ([*inverted*](https://journals.sagepub.com/doi/pdf/10.1177/1536867X0400400204) dan [*contour-enhanced*](https://linkinghub.elsevier.com/retrieve/pii/S0895435607004350)), [*fail-safe N*](https://bmj.com/content/312/7023/125.1.abstract), [*trim-and-fill*](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.0006-341X.2000.00455.x), [*Egger's test*](https://www.bmj.com/content/315/7109/629), [*p-curve*](https://doi.org/10.1177/1745691614553988), dan [*equivalence test*](https://journals.sagepub.com/doi/full/10.1177/2515245918770963)).
 
 ##### **Bagian 9: Melaporkan Hasil Meta-Analisis**
 Pada bagian ini, pemandu akan menguraikan bagaimana cara melaporkan hasil meta-analisis, termasuk apa saja yang harus dilaporkan dalam artikel. Pemandu akan menggunakan [PRISMA *Statement*](http://dx.plos.org/10.1371/journal.pmed.1000097).
 
-##### **Bagian 10: Caveat - Limitasi Meta-Analisis**
+##### **Bagian 10: *Caveat* - Limitasi Meta-Analisis**
 Dalam bagian ini, pemandu akan menyampaikan limitasi studi meta-analisis dan bagaimana mencegah bias yang mungkin muncul sebelum studi dimulai. Pemandu juga akan menyampaikan bagaimana praktik Sains Terbuka dapat dilakukan untuk meningkatkan kredibilitas temuan dalam penelitian meta-analisis.
 
 <br>
-</br
+</br>
 
 ## Pemandu
 Pemandu kursus singkat ini adalah [Rizqy Amelia Zein](https://rameliaz.github.io/), staf pengajar di Departemen Psikologi Kepribadian dan Sosial, Fakultas Psikologi Universitas Airlangga. Amel sangat berminat pada kajian *computational reproducibility*, statistik lanjut, dan Metasains. Riset-risetnya berkaitan dengan topik penilaian moral, kepercayaan konspiratif, dan sikap awam terhadap sains, ilmuwan, dan otoritas sains.

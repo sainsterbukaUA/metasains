@@ -29,9 +29,11 @@ Kursus ini terdiri dari **10 bagian**. Di setiap bagian, kami akan menyediakan *
 
 Peserta dimungkinkan untuk mengajukan pertanyaan kepada pemandu kursus dengan mengisi *spreadsheet* yang khusus disediakan untuk menampung pertanyaan. *Spreadsheet* diatur dengan **akses publik** sehingga anda dapat menambahkan pertanyaan anda secara mandiri. Anda dapat **bertanya secara anonim** dan dimungkinkan untuk **belajar dari pertanyaan dari peserta lain**. 
 
-!!**MOHON DIINGAT**!! anda tidak diperkenankan untuk mengubah pertanyaan yang sudah diajukan oleh peserta lain, ataupun memodifikasi jawaban yang sudah diberikan pemandu.
+[Silakan klik di sini untuk mengakses *spreadsheet* pertanyaan.](https://docs.google.com/spreadsheets/d/1SC0IfyThNHkMgFR-LE8kQDyc7f0tfnUyDeV7gwBz4dg/edit?usp=sharing)
 
-Berikut adalah gambaran singkat materi kursus:
+**!!MOHON DIINGAT!!** anda tidak diperkenankan untuk mengubah pertanyaan yang sudah diajukan oleh peserta lain, ataupun memodifikasi jawaban yang sudah diberikan oleh pemandu.
+
+**Berikut adalah gambaran singkat materi kursus:**
 
 ##### **Bagian 1: Krisis Replikasi, Revolusi Kredibilitas, dan Pengantar Metasains**
 Dalam materi ini, pemandu akan menguraikan krisis coba-ulang (replikasi) dan revolusi kredibilitas yang terjadi di beberapa disiplin ilmu, khususnya Psikologi. Pemandu akan menguraikan akar persoalan krisis replikasi, definisi coba-ulang (replikasi) dan reka-ulang (*reproducibility*), dan mengapa persoalan ini menjadi ancaman bagi kredibilitas sains, lembaga otoritas sains, dan ilmuwan. Dalam materi ini, pemandu juga akan menguraikan peranan Metasains dalam revolusi kredibilitas.
@@ -43,7 +45,7 @@ Dalam materi ini, pemandu akan menguraikan apa yang dimaksud dengan sintesis buk
 Dalam materi ini, pemandu akan menjelaskan mengenai *eligibility criteria* yang harus ditetapkan peneliti sebelum melakukan pencarian literatur, diantaranya menetapkan kriteria inklusi dan ekslusi. Peserta juga akan diajak berlatih untuk menentukan kata kunci dengan teknik *Boolean logic* serta berlatih menggunakan basis data/mesin pencarian untuk mencari literatur. Selain itu, pemandu akan memberikan contoh penerapan *flowchart* sesuai dengan PRISMA *statement* untuk menggambarkan proses pemilihan sampel artikel.
 
 ##### **Bagian 4: Besaran Efek (*Effect Size*)**
-Pada bagian ini, peserta akan dikenalkan dengan konsep besaran efek (*effect size*) yang merupakan representasi dari bukti yang akan direkam dan dianalisis dalam studi meta-analisis. Peserta akan dikenalkan dengan berbagai macam konsep besaran efek serta teknik konversinya apabila sampel artikel memuat informasi besaran efek yang berbeda.
+Pada bagian ini, peserta akan dikenalkan dengan konsep besaran efek (*effect size*) yang merupakan representasi bukti yang akan direkam dan dianalisis dalam studi meta-analisis. Peserta akan dikenalkan dengan berbagai macam konsep besaran efek serta teknik konversinya apabila sampel artikel memuat informasi besaran efek yang berbeda.
 
 ##### **Bagian 5: Mengkoding Informasi dalam Naskah dan Analisis Risiko Bias**
 Pada bagian ini, pemandu akan memberikan strategi-strategi yang dapat digunakan peneliti untuk mengkoding informasi dengan menggunakan *coding sheet*. Selain itu, peserta diajak untuk berlatih melakukan analisis risiko bias pada sampel artikel untuk mengestimasi kualitas penelitian yang digunakan dalam meta-analisis.
@@ -55,12 +57,12 @@ Dalam bagian ini, pemandu akan menjelaskan perbedaan *random*, *fixed* dan *mixe
 Di bagian ini, pemandu akan menguraikan strategi-strategi yang digunakan untuk mendeteksi derajat heterogenitas studi-studi yang digunakan sebagai sampel dalam meta-analisis. Peserta juga diajak untuk mengenali teknik *meta-regression* yang dapat dilakukan untuk mendeteksi variabel moderator yang menyebabkan heterogenitas pada sampel.
 
 ##### **Bagian 8: Mendeteksi dan Mengkoreksi Bias Publikasi**
-Meta-analisis umumnya hanya mencakup studi-studi yang dipublikasikan atau dapat diakses terbuka. Namun, bagaimana dengan penelitian yang tidak dipublikasikan, apalagi yang hasilnya negatif (*null findings*)? Padahal studi dengan hasil negatif lebih sulit dipublikasikan daripada studi dengan hasil positif. Hal ini menimbulkan kondisi yang juga disebut sebagai **bias publikasi**. Dampaknya, meta-analisis memberikan informasi yang parsial akibat tidak tersedianya semuanya informasi yang dibutuhkan untuk membuat kesimpulan. Di bagian ini, pemandu akan menerangkan teknik-teknik yang dapat digunakan untuk mendeteksi dan mengkoreksi bias publikasi (*funnel plot* ([*inverted*](https://journals.sagepub.com/doi/pdf/10.1177/1536867X0400400204) dan [*contour-enhanced*](https://linkinghub.elsevier.com/retrieve/pii/S0895435607004350)), [*fail-safe N*](bmj.com/content/312/7023/125.1.abstract), [*trim-and-fill*](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.0006-341X.2000.00455.x), *Egger's test*, [*p-curve*](https://doi.org/10.1177/1745691614553988), dan [*equivalence test*](https://journals.sagepub.com/doi/full/10.1177/2515245918770963)).
+Meta-analisis umumnya hanya mencakup studi-studi yang dipublikasikan atau dapat diakses terbuka. Namun, bagaimana dengan penelitian yang tidak dipublikasikan, apalagi yang hasilnya negatif (*null findings*)? Padahal studi dengan hasil negatif lebih sulit dipublikasikan daripada studi dengan hasil positif. Hal ini menimbulkan kondisi yang juga disebut sebagai **bias publikasi**. Dampaknya, meta-analisis memberikan informasi yang parsial akibat tidak tersedianya semuanya informasi yang dibutuhkan untuk membuat kesimpulan. Di bagian ini, pemandu akan menerangkan teknik-teknik yang dapat digunakan untuk mendeteksi dan mengkoreksi bias publikasi (*funnel plot* ([*inverted*](https://journals.sagepub.com/doi/pdf/10.1177/1536867X0400400204) dan [*contour-enhanced*](https://linkinghub.elsevier.com/retrieve/pii/S0895435607004350)), [*fail-safe N*](https://bmj.com/content/312/7023/125.1.abstract), [*trim-and-fill*](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.0006-341X.2000.00455.x), [*Egger's test*](https://www.bmj.com/content/315/7109/629), [*p-curve*](https://doi.org/10.1177/1745691614553988), dan [*equivalence test*](https://journals.sagepub.com/doi/full/10.1177/2515245918770963)).
 
 ##### **Bagian 9: Melaporkan Hasil Meta-Analisis**
 Pada bagian ini, pemandu akan menguraikan bagaimana cara melaporkan hasil meta-analisis, termasuk apa saja yang harus dilaporkan dalam artikel. Pemandu akan menggunakan [PRISMA *Statement*](http://dx.plos.org/10.1371/journal.pmed.1000097).
 
-##### **Bagian 10: Caveat - Limitasi Meta-Analisis**
+##### **Bagian 10: *Caveat* - Limitasi Meta-Analisis**
 Dalam bagian ini, pemandu akan menyampaikan limitasi studi meta-analisis dan bagaimana mencegah bias yang mungkin muncul sebelum studi dimulai. Pemandu juga akan menyampaikan bagaimana praktik Sains Terbuka dapat dilakukan untuk meningkatkan kredibilitas temuan dalam penelitian meta-analisis.
 
 ## Pemandu
