@@ -18,7 +18,7 @@ Sains Terbuka Airlangga adalah sekelompok peneliti pemula yang berasal dari lata
 Lebih lanjut silahkan klik: https://sainsterbukaua.github.io/
 
 
-Apa itu sains terbuka (*open science*)? 
+#### Apa itu sains terbuka (*open science*)? 
 * [Wikipedia](https://en.wikipedia.org/wiki/Open_science)
 * [UNESCO](http://www.unesco.org/new/en/communication-and-information/portals-and-platforms/goap/open-science-movement/)
 * [An introduction to open science (Psychological Science Agenda)](https://www.apa.org/science/about/psa/2019/02/open-science)
