@@ -67,3 +67,6 @@ Dalam bagian ini, pemandu akan menyampaikan limitasi studi meta-analisis dan bag
 
 ## Pemandu
 Pemandu kursus singkat ini adalah [Rizqy Amelia Zein](https://rameliaz.github.io/), staf pengajar di Departemen Psikologi Kepribadian dan Sosial, Fakultas Psikologi Universitas Airlangga. Amel sangat berminat pada kajian *computational reproducibility*, statistik lanjut, dan Metasains. Riset-risetnya berkaitan dengan topik penilaian moral, kepercayaan konspiratif, dan sikap awam terhadap sains, ilmuwan, dan otoritas sains.
+
+
+**Silakan akses laman kursus melalui tautan: https://sainsterbukaua.github.io/meta-analysis/**
