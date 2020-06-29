@@ -250,7 +250,7 @@ class: inverse, center
 
 --
 
-* Wow saya dapat membuktikan bahwa anda punya mampu **memprediksi apa yang terjadi di masa depan**! `r emo::ji("boom")`
+* Wow saya dapat membuktikan bahwa anda punya kemampuan **memprediksi apa yang terjadi di masa depan**! `r emo::ji("boom")`
 
 
 ---
