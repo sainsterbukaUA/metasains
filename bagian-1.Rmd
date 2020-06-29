@@ -15,8 +15,8 @@ Dalam materi ini, pemandu akan menguraikan krisis coba-ulang (replikasi) dan rev
 </br>
 
 ## Salindia Materi
-* Salindia HTML
-* Salindia PDF
+* [Salindia HTML](https://sainsterbukaua.github.io/meta-analysis/slides/materi-bagian-1.html)
+* [Salindia PDF](https://sainsterbukaua.github.io/meta-analysis/slides/materi-bagian-1.pdf)
 
 <br>
 </br>
@@ -28,9 +28,10 @@ Dalam materi ini, pemandu akan menguraikan krisis coba-ulang (replikasi) dan rev
 * Cohen, J. (1990). [Things I have learned (so far)](https://psycnet.apa.org/record/1992-97624-028). American Psychologist, 45(12), 1304.
 * Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). [False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant](https://journals.sagepub.com/doi/abs/10.1177/0956797611417632). Psychological Science, 22(11), 1359-1366.
 * Goodman, S. N., Fanelli, D., & Ioannidis, J. P. (2016). [What does research reproducibility mean?](https://stm.sciencemag.org/content/8/341/341ps12). Science Translational Medicine, 8(341), 341ps12-341ps12.
-
+* Ioannidis, J. P., Fanelli, D., Dunne, D. D., & Goodman, S. N. (2015). [Meta-research: evaluation and improvement of research methods and practices](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002264). PLoS Biology, 13(10), e1002264.
 
 ### Krisis Reka-Ulang (*Reproducibility*) di Berbagai Disiplin Ilmu
+* **Psikologi**: Diener, E. & Biswas-Diener, R. (2020). [The replication crisis in psychology](http://noba.to/q4cvydeh). In R. Biswas-Diener & E. Diener (Eds), Noba textbook series: Psychology. Champaign, IL: DEF publishers.
 * **Ekonomi**: Camerer, C. F., Dreber, A., Forsell, E., Ho, T. H., Huber, J., Johannesson, M., ... & Heikensten, E. (2016). [Evaluating replicability of laboratory experiments in economics](https://science.sciencemag.org/content/351/6280/1433.abstract). Science, 351(6280), 1433-1436.
 * **Ilmu Politik**: Lupia, A., & Elman, C. (2014). [Openness in political science: Data access and research transparency](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/openness-in-political-science-data-access-and-research-transparency/0B189FC1097A4D062E57F805E8F07BD0). PS, Political Science & Politics, 47(1), 19.
 * **Neurosains dan Biomedis**: Bzdok, D., & Ioannidis, J. P. (2019). [Exploration, inference, and prediction in neuroscience and biomedicine](https://www.sciencedirect.com/science/article/pii/S0166223619300074?casa_token=oyqSjheFpzYAAAAA:J1uvdFYktmIveiH5BfKs_aywtBfoZXxLKnJyEib3OhyUzNN76ImNFjqwdAmSzY4LDTeQeXuWVEs). Trends in neurosciences, 42(4), 251-262.
@@ -44,6 +45,7 @@ Dalam materi ini, pemandu akan menguraikan krisis coba-ulang (replikasi) dan rev
 ### Materi Lainnya yang Menarik
 * [Reproducibility of Scientific Results (Stanford Encyclopedia of Philosophy)](https://plato.stanford.edu/entries/scientific-reproducibility/#pagetopright)
 * [Open Science Knowledge Base](https://how-to-open.science/)
+* [Presentasi Metascience Symposium 2019 di Stanford University](https://www.metascience2019.org/presentations/)
 
 
 <br>
