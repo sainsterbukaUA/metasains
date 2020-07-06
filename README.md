@@ -35,7 +35,7 @@ Peserta dimungkinkan untuk mengajukan pertanyaan kepada pemandu kursus dengan me
 
 **Berikut adalah gambaran singkat materi kursus:**
 
-##### [**Bagian 1: Krisis Replikasi, Revolusi Kredibilitas, dan Pengantar Metasains**](https://sainsterbukaua.github.io/meta-analysis/bagian-1.html)
+##### [**Bagian 1: Krisis Replikasi, Revolusi Kredibilitas, dan Pengantar Metasains**](https://sainsterbukaua.github.io/metasains/bagian-1.html)
 Dalam materi ini, pemandu akan menguraikan krisis coba-ulang (replikasi) dan revolusi kredibilitas yang terjadi di beberapa disiplin ilmu, khususnya Psikologi. Pemandu akan menguraikan akar persoalan krisis replikasi, definisi coba-ulang (replikasi) dan reka-ulang (*reproducibility*), dan mengapa persoalan ini menjadi ancaman bagi kredibilitas sains, lembaga otoritas sains, dan ilmuwan. Dalam materi ini, pemandu juga akan menguraikan peranan Metasains dalam revolusi kredibilitas.
 
 ##### **Bagian 2: Pengantar Sintesis Bukti (*Evidence Synthesis*) dan Meta-Analisis**

@@ -1,0 +1,52 @@
+<br>
+</br>
+
+## Bagian 2
+### Pengantar Sintesis Bukti (*Evidence Synthesis*) dan Meta-Analisis
+
+Dalam materi ini, pemandu akan menguraikan apa yang dimaksud dengan sintesis bukti, apa kelebihan pendekatan ini serta dalam kondisi seperti apa studi sintesis bukti dianggap kredibel. Selain itu, peserta akan dikenalkan dengan bermacam-macam pendekatan sintesis bukti, serta pengantar singkat mengenai meta-analisis, termasuk pada saat seperti apa meta-analisis dilakukan dan hal-hal apa yang harus disiapkan oleh peneliti sebelum melakukan meta-analisis.
+
+<br>
+</br>
+
+## Video Kursus
+
+
+<br>
+</br>
+
+## Salindia Materi
+* [Salindia HTML](https://sainsterbukaua.github.io/meta-analysis/slides/materi-bagian-2.html)
+* [Salindia PDF](https://sainsterbukaua.github.io/meta-analysis/slides/materi-bagian-2.pdf)
+
+<br>
+</br>
+
+## Kuis
+
+<br>
+</br>
+
+## Daftar Bacaan
+* Whittemore, R., Chao, A., Jang, M., Minges, K. E., & Park, C. (2014). [Methods for knowledge synthesis: an overview](https://linkinghub.elsevier.com/retrieve/pii/S0147956314001897). Heart & Lung, 43(5), 453-461.
+* Boland, A., Cherry, G., & Dickson, R. (Eds.). (2017). Doing a systematic review: A student's guide. London: SAGE.
+* Chan, M. E., & Arvey, R. D. (2012). [Meta-analysis and the development of knowledge](http://journals.sagepub.com/doi/10.1177/1745691611429355). Perspectives on Psychological Science, 7(1), 79-92. 
+* Hedges, L. V. (2015). [The early history of meta-analysis](https://onlinelibrary.wiley.com/doi/abs/10.1002/jrsm.1149). Research Synthesis Methods, 6(3), 284–286.
+* Glass, G. V. (2015). [Meta-analysis at middle age: a personal history](http://doi.wiley.com/10.1002/jrsm.1133). Research Synthesis Methods, 6(3), 221-231.
+
+
+### Materi Lainnya yang Menarik
+* [Reproducibility of Scientific Results (Stanford Encyclopedia of Philosophy)](https://plato.stanford.edu/entries/scientific-reproducibility/#pagetopright)
+* [Open Science Knowledge Base](https://how-to-open.science/)
+* [Presentasi Metascience Symposium 2019 di Stanford University](https://www.metascience2019.org/presentations/)
+
+<br>
+</br>
+
+## Ingin Bertanya pada Pemandu?
+
+Peserta dimungkinkan untuk mengajukan pertanyaan kepada pemandu kursus dengan mengisi *spreadsheet* yang khusus disediakan untuk menampung pertanyaan. *Spreadsheet* diatur dengan **akses publik** sehingga anda dapat menambahkan pertanyaan anda secara mandiri. Anda dapat **bertanya secara anonim** dan dimungkinkan untuk **belajar dari pertanyaan dari peserta lain**. Anda juga **diperbolehkan untuk ikut menjawab** pertanyaan peserta lainnya di kolom yang sudah disediakan.
+
+[Silakan klik di sini untuk mengakses *spreadsheet* pertanyaan.](https://docs.google.com/spreadsheets/d/1SC0IfyThNHkMgFR-LE8kQDyc7f0tfnUyDeV7gwBz4dg/edit?usp=sharing)
+
+**!!MOHON DIINGAT!!** anda tidak diperkenankan untuk mengubah pertanyaan yang sudah diajukan oleh peserta lain, ataupun memodifikasi jawaban yang sudah diberikan oleh pemandu.

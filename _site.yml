@@ -1,12 +1,12 @@
-name: "meta-analysis"
+name: "metasains"
 author: "Rizqy Amelia Zein"
 output_dir: "docs"
 exclude: ["*.xls","*.R","/slides","*.pptx","*.jpg","*.doc"]
 navbar:
   title: "Kursus Mandiri Metasains"
   left:
-    - text: "oleh Rizqy Amelia Zein"
-      href: https://rameliaz.github.io/
+    - text: "oleh Sains Terbuka Airlangga"
+      href: https://sainsterbukaua.github.io/
     - icon: fa-github fa-lg
       href: https://github.com/sainsterbukaUA/meta-analysis
   right:
@@ -16,6 +16,10 @@ navbar:
       href: selamat-datang.html
     - text: "Bagian 1"
       href: bagian-1.html
+    - text: "Bagian 2"
+      href: bagian-2.html
+    - text: "Bagian 3"
+      href: bagian-3.html
   - text: "Survei"  
     menu: 
     - text: "Evaluasi Kursus"

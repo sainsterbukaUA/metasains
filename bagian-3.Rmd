@@ -1,0 +1,46 @@
+<br>
+</br>
+
+## Bagian 3
+### Pencarian Literatur dan PRISMA *Guideline*
+
+Dalam materi ini, pemandu akan menjelaskan mengenai *eligibility criteria* yang harus ditetapkan peneliti sebelum melakukan pencarian literatur, diantaranya menetapkan kriteria inklusi dan ekslusi. Peserta juga akan diajak berlatih untuk menentukan kata kunci dengan teknik *Boolean logic* serta berlatih menggunakan basis data/mesin pencarian untuk mencari literatur. Selain itu, pemandu akan memberikan contoh penerapan *flowchart* sesuai dengan PRISMA *statement* untuk menggambarkan proses pemilihan sampel artikel.
+
+<br>
+</br>
+
+## Video Kursus
+
+<br>
+</br>
+
+## Salindia Materi
+* [Salindia HTML](https://sainsterbukaua.github.io/meta-analysis/slides/materi-bagian-3.html)
+* [Salindia PDF](https://sainsterbukaua.github.io/meta-analysis/slides/materi-bagian-3.pdf)
+
+<br>
+</br>
+
+## Kuis
+
+<br>
+</br>
+
+## Daftar Bacaan
+
+### Materi Lainnya yang Menarik
+* [Reproducibility of Scientific Results (Stanford Encyclopedia of Philosophy)](https://plato.stanford.edu/entries/scientific-reproducibility/#pagetopright)
+* [Open Science Knowledge Base](https://how-to-open.science/)
+* [Presentasi Metascience Symposium 2019 di Stanford University](https://www.metascience2019.org/presentations/)
+
+
+<br>
+</br>
+
+## Ingin Bertanya pada Pemandu?
+
+Peserta dimungkinkan untuk mengajukan pertanyaan kepada pemandu kursus dengan mengisi *spreadsheet* yang khusus disediakan untuk menampung pertanyaan. *Spreadsheet* diatur dengan **akses publik** sehingga anda dapat menambahkan pertanyaan anda secara mandiri. Anda dapat **bertanya secara anonim** dan dimungkinkan untuk **belajar dari pertanyaan dari peserta lain**. Anda juga **diperbolehkan untuk ikut menjawab** pertanyaan peserta lainnya di kolom yang sudah disediakan.
+
+[Silakan klik di sini untuk mengakses *spreadsheet* pertanyaan.](https://docs.google.com/spreadsheets/d/1SC0IfyThNHkMgFR-LE8kQDyc7f0tfnUyDeV7gwBz4dg/edit?usp=sharing)
+
+**!!MOHON DIINGAT!!** anda tidak diperkenankan untuk mengubah pertanyaan yang sudah diajukan oleh peserta lain, ataupun memodifikasi jawaban yang sudah diberikan oleh pemandu.
